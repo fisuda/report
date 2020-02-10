@@ -1,0 +1,14 @@
+#
+# FIXME P3: REGEX() above needs a cleanup.
+#
+# NOTE: the six different sizes above is to cover for different sizes in the version string
+#
+#       19669|19670|19671|19672|19673|19674|19675
+#
+#       19669:   d.d.d
+#       19670:   d.dd.d
+#       19675:   d.dd.d-next
+
+brokerStop CB
+accumulatorStop
+dbDrop CB

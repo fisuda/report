@@ -1,0 +1,218 @@
+(ft_env) [root@centos245 fiware-orion]# LANG=C make functional_test INSTALL_DIR=~
+./scripts/build/compileInfo.sh --release
+27c27
+< #define COMPILE_TIME     "Mon Feb 10 17:53:55 JST 2020"
+---
+> #define COMPILE_TIME     "Tue Feb 11 02:46:29 JST 2020"
+30c30
+< #define RELEASE_DATE     "Mon Feb 10 17:53:55 JST 2020"
+---
+> #define RELEASE_DATE     "Tue Feb 11 02:46:29 JST 2020"
+mkdir -p  BUILD_RELEASE || true
+cd BUILD_RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DBUILD_ARCH=x86_64 -DCMAKE_INSTALL_PREFIX=/root
+CMAKE_BUILD_TYPE set to RELEASE
+Compiling in system Linux-3.10.0-327.el7.x86_64
+CMAKE_BUILD_TYPE: 'RELEASE'
+cmake: RELEASE compilation
+Building for x86_64
+cmake: OK
+contextBroker distro: 'CentOS_7.7.1908'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/fiware-orion/BUILD_RELEASE
+cd BUILD_RELEASE && make -j4
+make[1]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[2]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[  1%] Built target lm
+[  4%] [ 11%] make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target common
+Built target pa
+[ 13%] Built target orionTypes
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/depend.make' has modification time 31955 s in the future
+[ 23%] Built target ngsi
+[ 25%] Built target convenience
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 29%] Built target ngsi9
+[ 32%] make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target ngsi10
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 44%] Built target serviceRoutinesV2
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 46%] Built target ngsiNotify
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 49%] Built target apiTypesV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 50%] make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target parse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/depend.make' has modification time 31954 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 71%] make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target serviceRoutines
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 75%] [ 82%] Built target rest
+[ 88%] Built target jsonParseV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target jsonParse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 89%] [ 89%] [ 90%] Built target cache
+Built target alarmMgr
+Built target metricsMgr
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target mongoBackend
+[ 99%] Built target logSummary
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/app/contextBroker/CMakeFiles/contextBroker.dir/depend.make' has modification time 31959 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/app/contextBroker/CMakeFiles/contextBroker.dir/depend.make' has modification time 31959 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target contextBroker
+make[2]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[1]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+cd BUILD_RELEASE && make install DESTDIR=/
+make[1]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[2]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[  1%] Built target lm
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[  8%] Built target pa
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 11%] Built target common
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 13%] Built target orionTypes
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 23%] Built target ngsi
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/depend.make' has modification time 31953 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/depend.make' has modification time 31953 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 44%] Built target serviceRoutines
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 56%] Built target serviceRoutinesV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 58%] Built target convenience
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 62%] Built target ngsi9
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 65%] Built target ngsi10
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 67%] Built target ngsiNotify
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 70%] Built target apiTypesV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 71%] Built target parse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 77%] Built target jsonParse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 84%] Built target jsonParseV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 88%] Built target rest
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 97%] Built target mongoBackend
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 98%] Built target cache
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 98%] Built target alarmMgr
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target metricsMgr
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target logSummary
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/app/contextBroker/CMakeFiles/contextBroker.dir/depend.make' has modification time 31956 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Warning: File `src/app/contextBroker/CMakeFiles/contextBroker.dir/depend.make' has modification time 31956 s in the future
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target contextBroker
+make[2]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+Install the project...
+-- Install configuration: "RELEASE"
+-- Up-to-date: //root/bin/contextBroker
+make[1]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+./test/functionalTest/testHarness.sh
+Mon Feb 10 17:53:59 JST 2020
+0001/1: notification_different_sizes.test ............................................................................  (ERROR 9 - .out and .regexpect differ) 
+0001/1: notification_different_sizes.test ............................................................................ (intent 2) (ERROR 9 - .out and .regexpect differ) 
+0001/1: notification_different_sizes.test ............................................................................ (intent 3) (FAIL 9 - .out and .regexpect differ) 
+30 seconds
+Total test time: 30.69 seconds
+
+Orion Functional Test Log File:
+================================================================================
+Orion Functional tests starting
+Mon Feb 10 17:54:00 JST 2020
+
+-----  Notifications of different sizes  -----
+(notification_different_sizes.test) output not as expected
+VALIDATION ERROR: input line:
+   Sending message 1 to HTTP server: sending message of 19485 bytes to HTTP server
+does not match ref line:
+   Sending message 1 to HTTP server: sending message of REGEX((19490|19491|19492|19493|19494|19495|19496)) bytes to HTTP server
+
+
+================================================================================
+
+----------- Failing tests ------------------
+  o  notification_different_sizes.test
+make: *** [functional_test] Error 1
+(ft_env) [root@centos245 fiware-orion]#

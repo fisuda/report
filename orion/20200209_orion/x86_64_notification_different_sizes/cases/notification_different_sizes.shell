@@ -1,0 +1,139 @@
+
+# Close to the static buffer limit (~19 KB)
+url="/v1/subscribeContext"
+payload='{
+  "entities": [
+    {
+      "type": "T",
+      "isPattern": "false",
+      "id": "E1"
+    }
+  ],
+  "attributes": [ ],
+  "reference": "http://127.0.0.1:'${LISTENER_PORT}'/notify",
+  "duration": "PT1H",
+  "notifyConditions": [
+      {
+          "type": "ONCHANGE",
+          "condValues": [
+              "A"
+          ]
+      }
+  ]
+}'
+orionCurl --url "$url" --payload "${payload}"
+echo
+
+sleep 1
+echo "1: ++++++++++++++++++++"
+# Passing the static buffer limit (~21 KB)
+url="/v1/subscribeContext"
+payload='{
+  "entities": [
+    {
+      "type": "T",
+      "isPattern": "false",
+      "id": "E2"
+    }
+  ],
+  "attributes": [ ],
+  "reference": "http://127.0.0.1:'${LISTENER_PORT}'/notify",
+  "duration": "PT1H",
+  "notifyConditions": [
+      {
+          "type": "ONCHANGE",
+          "condValues": [
+              "A"
+          ]
+      }
+  ]
+}'
+orionCurl --url "$url" --payload "${payload}"
+echo
+
+
+sleep 1
+echo "2: ++++++++++++++++++++"
+# Close to the dynamic buffer limit (~7.9 MB)
+url="/v1/subscribeContext"
+payload='{
+  "entities": [
+    {
+      "type": "T",
+      "isPattern": "false",
+      "id": "E3"
+    }
+  ],
+  "attributes": [ ],
+  "reference": "http://127.0.0.1:'${LISTENER_PORT}'/notify",
+  "duration": "PT1H",
+  "notifyConditions": [
+      {
+          "type": "ONCHANGE",
+          "condValues": [
+              "A"
+          ]
+      }
+  ]
+}'
+orionCurl --url "$url" --payload "${payload}"
+echo
+
+
+sleep 1
+echo "3: ++++++++++++++++++++"
+# Passing the dynamic buffer limit, causing an error (~8.1 MB)
+url="/v1/subscribeContext"
+payload='{
+  "entities": [
+    {
+      "type": "T",
+      "isPattern": "false",
+      "id": "E4"
+    }
+  ],
+  "attributes": [ ],
+  "reference": "http://127.0.0.1:'${LISTENER_PORT}'/notify",
+  "duration": "PT1H",
+  "notifyConditions": [
+      {
+          "type": "ONCHANGE",
+          "condValues": [
+              "A"
+          ]
+      }
+  ]
+}'
+orionCurl --url "$url" --payload "${payload}"
+echo
+
+
+echo "4: ++++++++++++++++++++"
+echo "** Notifications sent:"
+accumulatorCount
+
+# ----------------------------------------------------------------------
+# NOTE (not a FIXME):
+# These two tests make reference to the old functionality provided by
+# the sendHttpSocket() function in file clientSocketHttp.cpp. If we are
+# ever to activate it again through the USE_OLD_SENDHTTPSOCKET flag, these lines
+# are necessary for the test to pass.
+
+# The log has to show exactly 1 case of static buffer usage
+#echo "** Static buffer usages:"
+#grep "to HTTP server: sending static message of" /tmp/contextBroker.log | wc -l
+
+# The log has to show exactly 2 cases of dynamic buffer usage
+#echo "** Dynamic buffer usages:"
+#grep "to HTTP server: sending dynamic message of" /tmp/contextBroker.log | wc -l
+# ----------------------------------------------------------------------
+
+# The log has to show exactly 1 error about notification too large
+echo "** Too large errors:"
+grep "HTTP request to send is too large" /tmp/contextBroker.log | wc -l
+
+# Notification sizes. Note that if don't use the cut, some character in the log line prologue
+# breaks the test harness: @, :, [, ], ~, /, (, ), etc.
+echo "** Notification sizes:"
+grep "to HTTP server" /tmp/contextBroker.log | grep "Sending message" | awk -F\| '{ print $10 }' | awk -F= '{ print $2 }'
+

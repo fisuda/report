@@ -1,0 +1,26 @@
+{ "ok" : 1 }
+accumulator running as PID 3808
+MongoDB shell version v3.6.17
+connecting to: mongodb://localhost:27017/ftest?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("45bddafd-106b-4e64-a9a5-be1b6b45898a") }
+MongoDB server version: 3.6.17
+WriteResult({ "nInserted" : 1 })
+bye
+MongoDB shell version v3.6.17
+connecting to: mongodb://localhost:27017/ftest?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("0f73604b-2cf9-4efe-a8e5-d9e215e28572") }
+MongoDB server version: 3.6.17
+WriteResult({ "nInserted" : 1 })
+bye
+MongoDB shell version v3.6.17
+connecting to: mongodb://localhost:27017/ftest?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("f5e86e2d-98d2-40d2-a4f8-b1c7970696bc") }
+MongoDB server version: 3.6.17
+WriteResult({ "nInserted" : 1 })
+bye
+MongoDB shell version v3.6.17
+connecting to: mongodb://localhost:27017/ftest?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a0d84ac2-a8ee-43ac-b5d4-26515051f11a") }
+MongoDB server version: 3.6.17
+WriteResult({ "nInserted" : 1 })
+bye

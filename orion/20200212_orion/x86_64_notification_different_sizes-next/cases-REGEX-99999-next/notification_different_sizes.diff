@@ -1,0 +1,4 @@
+VALIDATION ERROR: input line:
+   Sending message 1 to HTTP server: sending message of 19490 bytes to HTTP server
+does not match ref line:
+   Sending message 1 to HTTP server: sending message of REGEX((99999)) bytes to HTTP server

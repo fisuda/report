@@ -1,0 +1,64 @@
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: 8ada8924-4d86-11ea-a995-000c29ed72bc
+Date: Wed, 12 Feb 2020 10:58:03 GMT
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H", 
+        "subscriptionId": "5e43da3b2ebbe24b1e605b0a"
+    }
+}
+
+1: ++++++++++++++++++++
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: 8b8ca744-4d86-11ea-ad4b-000c29ed72bc
+Date: Wed, 12 Feb 2020 10:58:05 GMT
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H", 
+        "subscriptionId": "5e43da3d2ebbe24b1e605b0b"
+    }
+}
+
+2: ++++++++++++++++++++
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: 8c4555dc-4d86-11ea-9ce0-000c29ed72bc
+Date: Wed, 12 Feb 2020 10:58:06 GMT
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H", 
+        "subscriptionId": "5e43da3e2ebbe24b1e605b0c"
+    }
+}
+
+3: ++++++++++++++++++++
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: 8d4cec7e-4d86-11ea-adcb-000c29ed72bc
+Date: Wed, 12 Feb 2020 10:58:08 GMT
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H", 
+        "subscriptionId": "5e43da3f2ebbe24b1e605b0d"
+    }
+}
+
+4: ++++++++++++++++++++
+** Notifications sent:
+3
+** Too large errors:
+1
+** Notification sizes:
+Sending message 1 to HTTP server: sending message of 19490 bytes to HTTP server
+Sending message 2 to HTTP server: sending message of 21490 bytes to HTTP server
+Sending message 3 to HTTP server: sending message of 8100492 bytes to HTTP server

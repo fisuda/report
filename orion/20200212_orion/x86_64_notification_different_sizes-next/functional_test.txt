@@ -1,0 +1,605 @@
+(ft_env) [root@centos245 fiware-orion]# make functional_test INSTALL_DIR=~
+./scripts/build/compileInfo.sh --release
+27c27
+< #define COMPILE_TIME     "Wed Feb 12 19:16:29 JST 2020"
+---
+> #define COMPILE_TIME     "Wed Feb 12 19:15:13 JST 2020"
+30c30
+< #define RELEASE_DATE     "Wed Feb 12 19:16:29 JST 2020"
+---
+> #define RELEASE_DATE     "Wed Feb 12 19:15:13 JST 2020"
+mkdir -p  BUILD_RELEASE || true
+cd BUILD_RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DBUILD_ARCH=x86_64 -DCMAKE_INSTALL_PREFIX=/root
+CMAKE_BUILD_TYPE set to RELEASE
+Compiling in system Linux-3.10.0-1062.12.1.el7.x86_64
+CMAKE_BUILD_TYPE: 'RELEASE'
+cmake: RELEASE compilation
+Building for x86_64
+cmake: OK
+contextBroker distro: 'CentOS_7.7.1908'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/fiware-orion/BUILD_RELEASE
+cd BUILD_RELEASE && make -j4
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[  1%] Built target lm
+[  8%] make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Built target pa
+[ 11%] [ 13%] Built target orionTypes
+Built target common
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 23%] Built target ngsi
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 25%] Built target convenience
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 29%] Built target ngsi9
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 32%] Scanning dependencies of target serviceRoutines
+Built target ngsi10
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 44%] Built target serviceRoutinesV2
+[ 46%] make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Built target ngsiNotify
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 49%] Built target apiTypesV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 50%] Built target parse
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 56%] Built target jsonParse
+[ 63%] Built target jsonParseV2
+[ 67%] make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Built target rest
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 67%] [ 68%] Built target alarmMgr
+Built target cache
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 68%] [ 77%] [ 77%] Built target mongoBackend
+Built target logSummary
+Building CXX object src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/versionTreat.cpp.o
+[ 78%] Built target metricsMgr
+Linking CXX static library libserviceRoutines.a
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 99%] Built target serviceRoutines
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Scanning dependencies of target contextBroker
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[100%] Building CXX object src/app/contextBroker/CMakeFiles/contextBroker.dir/contextBroker.cpp.o
+Linking CXX executable contextBroker
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[100%] Built target contextBroker
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+cd BUILD_RELEASE && make install DESTDIR=/
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[  1%] Built target lm
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[  8%] Built target pa
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 11%] Built target common
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 13%] Built target orionTypes
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 23%] Built target ngsi
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 44%] Built target serviceRoutines
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 56%] Built target serviceRoutinesV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 58%] Built target convenience
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 62%] Built target ngsi9
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 65%] Built target ngsi10
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 67%] Built target ngsiNotify
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 70%] Built target apiTypesV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 71%] Built target parse
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 77%] Built target jsonParse
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 84%] Built target jsonParseV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 88%] Built target rest
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 97%] Built target mongoBackend
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 98%] Built target cache
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 98%] Built target alarmMgr
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 99%] Built target metricsMgr
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 99%] Built target logSummary
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[100%] Built target contextBroker
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+Install the project...
+-- Install configuration: "RELEASE"
+-- Installing: //root/bin/contextBroker
+-- Removed runtime path from "//root/bin/contextBroker"
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+./test/functionalTest/testHarness.sh
+2020年  2月 12日 水曜日 19:16:50 JST
+0001/1: notification_different_sizes.test ............................................................................  10 seconds
+Total test time: 10.79 seconds
+(ft_env) [root@centos245 fiware-orion]# vi test/functionalTest/cases/notification_different_sizes.test 
+(ft_env) [root@centos245 fiware-orion]# make functional_test INSTALL_DIR=~
+./scripts/build/compileInfo.sh --release
+27c27
+< #define COMPILE_TIME     "Wed Feb 12 19:17:50 JST 2020"
+---
+> #define COMPILE_TIME     "Wed Feb 12 19:16:29 JST 2020"
+30c30
+< #define RELEASE_DATE     "Wed Feb 12 19:17:50 JST 2020"
+---
+> #define RELEASE_DATE     "Wed Feb 12 19:16:29 JST 2020"
+mkdir -p  BUILD_RELEASE || true
+cd BUILD_RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DBUILD_ARCH=x86_64 -DCMAKE_INSTALL_PREFIX=/root
+CMAKE_BUILD_TYPE set to RELEASE
+Compiling in system Linux-3.10.0-1062.12.1.el7.x86_64
+CMAKE_BUILD_TYPE: 'RELEASE'
+cmake: RELEASE compilation
+Building for x86_64
+cmake: OK
+contextBroker distro: 'CentOS_7.7.1908'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/fiware-orion/BUILD_RELEASE
+cd BUILD_RELEASE && make -j4
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[  1%] Built target lm
+[  3%] [  6%] [ 13%] make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Built target orionTypes
+Built target common
+Built target pa
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 15%] [ 25%] Built target convenience
+Built target ngsi
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 32%] [ 32%] Built target ngsi9
+Built target ngsi10
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 44%] Built target serviceRoutinesV2
+Scanning dependencies of target serviceRoutines
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 46%] Built target ngsiNotify
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 49%] Built target apiTypesV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 50%] Built target parse
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 54%] Built target rest
+[ 60%] Built target jsonParse
+[ 67%] make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Built target jsonParseV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 68%] [ 68%] Built target cache
+Built target alarmMgr
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[ 68%] [ 68%] Built target logSummary
+[ 77%] [ 78%] Built target mongoBackend
+Built target metricsMgr
+Building CXX object src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/versionTreat.cpp.o
+Linking CXX static library libserviceRoutines.a
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 99%] Built target serviceRoutines
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+Scanning dependencies of target contextBroker
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+[100%] Building CXX object src/app/contextBroker/CMakeFiles/contextBroker.dir/contextBroker.cpp.o
+Linking CXX executable contextBroker
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[100%] Built target contextBroker
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+cd BUILD_RELEASE && make install DESTDIR=/
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[  1%] Built target lm
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[  8%] Built target pa
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 11%] Built target common
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 13%] Built target orionTypes
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 23%] Built target ngsi
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 44%] Built target serviceRoutines
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 56%] Built target serviceRoutinesV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 58%] Built target convenience
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 62%] Built target ngsi9
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 65%] Built target ngsi10
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 67%] Built target ngsiNotify
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 70%] Built target apiTypesV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 71%] Built target parse
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 77%] Built target jsonParse
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 84%] Built target jsonParseV2
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 88%] Built target rest
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 97%] Built target mongoBackend
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 98%] Built target cache
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 98%] Built target alarmMgr
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 99%] Built target metricsMgr
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[ 99%] Built target logSummary
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' に入ります
+make[3]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+[100%] Built target contextBroker
+make[2]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+Install the project...
+-- Install configuration: "RELEASE"
+-- Installing: //root/bin/contextBroker
+-- Removed runtime path from "//root/bin/contextBroker"
+make[1]: ディレクトリ `/opt/fiware-orion/BUILD_RELEASE' から出ます
+./test/functionalTest/testHarness.sh
+2020年  2月 12日 水曜日 19:18:11 JST
+0001/1: notification_different_sizes.test ............................................................................  (ERROR 9 - .out and .regexpect differ) 
+0001/1: notification_different_sizes.test ............................................................................ (intent 2) (ERROR 9 - .out and .regexpect differ) 
+0001/1: notification_different_sizes.test ............................................................................ (intent 3) (FAIL 9 - .out and .regexpect differ) 
+31 seconds
+Total test time: 30.93 seconds
+
+Orion Functional Test Log File:
+================================================================================
+Orion Functional tests starting
+Wed Feb 12 19:18:11 JST 2020
+
+-----  Notifications of different sizes  -----
+(notification_different_sizes.test) output not as expected
+VALIDATION ERROR: input line:
+   Sending message 1 to HTTP server: sending message of 19490 bytes to HTTP server
+does not match ref line:
+   Sending message 1 to HTTP server: sending message of REGEX((99999)) bytes to HTTP server
+
+
+================================================================================
+
+----------- Failing tests ------------------
+  o  notification_different_sizes.test
+make: *** [functional_test] エラー 1
+(ft_env) [root@centos245 fiware-orion]# cd -
+/opt/fiware-orion/test/functionalTest/cases
+(ft_env) [root@centos245 cases]# cd ..
+(ft_env) [root@centos245 functionalTest]# cp cases.old/0000_large_requests/notification_different_sizes.test cases/notification_different_sizes.test 
+cp: `cases/notification_different_sizes.test' を上書きしますか? y
+(ft_env) [root@centos245 functionalTest]# ls -l
+合計 144
+-rw-r--r--.   1 root root  2207  2月 12 18:45 README.md
+-rwxr-xr-x.   1 root root  6905  2月 12 18:45 blockSortDiff.sh
+drwxr-xr-x.   2 root root  4096  2月 12 19:18 cases
+drwxr-xr-x. 393 root root 20480  2月 12 18:45 cases.old
+-rwxr-xr-x.   1 root root  1659  2月 12 18:45 cleanFiles.sh
+-rwxr-xr-x.   1 root root 11560  2月 12 18:45 fixContentLengths.py
+-rw-r--r--.   1 root root 31677  2月 12 18:45 harnessFunctions.sh
+-rwxr-xr-x.   1 root root  2528  2月 12 18:45 httpsPrepare.sh
+-rwxr-xr-x.   1 root root  1402  2月 12 18:45 listFailing.sh
+-rwxr-xr-x.   1 root root  1423  2月 12 18:45 runFailing.sh
+-rwxr-xr-x.   1 root root  4005  2月 12 18:45 testDiff.py
+-rwxr-xr-x.   1 root root 30587  2月 12 18:45 testHarness.sh
+-rw-r--r--.   1 root root  1633  2月 12 18:45 testJson.py
+-rwxr-xr-x.   1 root root  2219  2月 12 18:45 viewDiffs.sh
+(ft_env) [root@centos245 functionalTest]# cd cases
+(ft_env) [root@centos245 cases]# ls
+notification_different_sizes.contextBroker.log  notification_different_sizes.shell.stderr      notification_different_sizes.teardown.stderr
+notification_different_sizes.diff               notification_different_sizes.shellInit         notification_different_sizes.teardown.stdout
+notification_different_sizes.out                notification_different_sizes.shellInit.stderr  notification_different_sizes.test
+notification_different_sizes.regexpect          notification_different_sizes.shellInit.stdout
+notification_different_sizes.shell              notification_different_sizes.teardown
+(ft_env) [root@centos245 cases]# vi notification_different_sizes.out 
+(ft_env) [root@centos245 cases]# cd ../../
+(ft_env) [root@centos245 test]# ..
+-bash: ..: コマンドが見つかりません
+(ft_env) [root@centos245 test]# cd ..
+(ft_env) [root@centos245 fiware-orion]# ls
+BUILD_RELEASE         CMakeLists.txt          LICENSE    archive  doc     etc       mkdocs.yml  scripts  test
+CHANGES_NEXT_RELEASE  ContributionPolicy.txt  README.md  ci       docker  makefile  rpm         src
+(ft_env) [root@centos245 fiware-orion]# LANG=C make functional_test INSTALL_DIR=~
+./scripts/build/compileInfo.sh --release
+27c27
+< #define COMPILE_TIME     "Wed Feb 12 19:23:02 JST 2020"
+---
+> #define COMPILE_TIME     "Wed Feb 12 19:17:50 JST 2020"
+30c30
+< #define RELEASE_DATE     "Wed Feb 12 19:23:02 JST 2020"
+---
+> #define RELEASE_DATE     "Wed Feb 12 19:17:50 JST 2020"
+mkdir -p  BUILD_RELEASE || true
+cd BUILD_RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DBUILD_ARCH=x86_64 -DCMAKE_INSTALL_PREFIX=/root
+CMAKE_BUILD_TYPE set to RELEASE
+Compiling in system Linux-3.10.0-1062.12.1.el7.x86_64
+CMAKE_BUILD_TYPE: 'RELEASE'
+cmake: RELEASE compilation
+Building for x86_64
+cmake: OK
+contextBroker distro: 'CentOS_7.7.1908'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/fiware-orion/BUILD_RELEASE
+cd BUILD_RELEASE && make -j4
+make[1]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[2]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[  1%] Built target lm
+[  4%] make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target common
+[  8%] Built target orionTypes
+[ 13%] Built target pa
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 23%] make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target ngsi
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 25%] Built target convenience
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 29%] Built target ngsi9
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 32%] Built target ngsi10
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+Scanning dependencies of target serviceRoutines
+[ 44%] Built target serviceRoutinesV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 46%] make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+Built target ngsiNotify
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 49%] Built target apiTypesV2
+[ 50%] Built target parse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 60%] [ 60%] Built target rest
+Built target jsonParse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 67%] Built target jsonParseV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 68%] [ 68%] Built target cache
+Built target alarmMgr
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 68%] Built target logSummary
+[ 72%] [ 77%] Built target mongoBackend
+[ 78%] Built target metricsMgr
+Building CXX object src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/versionTreat.cpp.o
+Linking CXX static library libserviceRoutines.a
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target serviceRoutines
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+Scanning dependencies of target contextBroker
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+[100%] Building CXX object src/app/contextBroker/CMakeFiles/contextBroker.dir/contextBroker.cpp.o
+Linking CXX executable contextBroker
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target contextBroker
+make[2]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+make[1]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+cd BUILD_RELEASE && make install DESTDIR=/
+make[1]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[2]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[  1%] Built target lm
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[  8%] Built target pa
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 11%] Built target common
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 13%] Built target orionTypes
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 23%] Built target ngsi
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 44%] Built target serviceRoutines
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 56%] Built target serviceRoutinesV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 58%] Built target convenience
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 62%] Built target ngsi9
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 65%] Built target ngsi10
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 67%] Built target ngsiNotify
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 70%] Built target apiTypesV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 71%] Built target parse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 77%] Built target jsonParse
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 84%] Built target jsonParseV2
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 88%] Built target rest
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 97%] Built target mongoBackend
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 98%] Built target cache
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 98%] Built target alarmMgr
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target metricsMgr
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target logSummary
+make[3]: Entering directory `/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target contextBroker
+make[2]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+Install the project...
+-- Install configuration: "RELEASE"
+-- Installing: //root/bin/contextBroker
+-- Removed runtime path from "//root/bin/contextBroker"
+make[1]: Leaving directory `/opt/fiware-orion/BUILD_RELEASE'
+./test/functionalTest/testHarness.sh
+Wed Feb 12 19:23:23 JST 2020
+0001/1: notification_different_sizes.test ............................................................................  10 seconds
+Total test time: 10.39 seconds

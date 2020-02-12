@@ -1,0 +1,64 @@
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: REGEX([0-9a-f\-]{36})
+Date: REGEX(.*)
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H",
+        "subscriptionId": "REGEX([0-9a-f]{24})"
+    }
+}
+
+1: ++++++++++++++++++++
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: REGEX([0-9a-f\-]{36})
+Date: REGEX(.*)
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H",
+        "subscriptionId": "REGEX([0-9a-f]{24})"
+    }
+}
+
+2: ++++++++++++++++++++
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: REGEX([0-9a-f\-]{36})
+Date: REGEX(.*)
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H",
+        "subscriptionId": "REGEX([0-9a-f]{24})"
+    }
+}
+
+3: ++++++++++++++++++++
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Fiware-Correlator: REGEX([0-9a-f\-]{36})
+Date: REGEX(.*)
+
+{
+    "subscribeResponse": {
+        "duration": "PT1H",
+        "subscriptionId": "REGEX([0-9a-f]{24})"
+    }
+}
+
+4: ++++++++++++++++++++
+** Notifications sent:
+3
+** Too large errors:
+1
+** Notification sizes:
+Sending message 1 to HTTP server: sending message of REGEX((99999)) bytes to HTTP server
+Sending message 2 to HTTP server: sending message of REGEX((99999)) bytes to HTTP server
+Sending message 3 to HTTP server: sending message of REGEX((9999999)) bytes to HTTP server

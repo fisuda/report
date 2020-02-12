@@ -1,0 +1,11 @@
+##
+# NOTE: the different sizes above is to cover for different sizes in the version string
+#
+#       d.d.d         (+0)
+#       d.d.d-next    (+5)
+#       d.dd.d        (+1)
+#       d.dd.d-next   (+6)
+
+brokerStop CB
+accumulatorStop
+dbDrop CB

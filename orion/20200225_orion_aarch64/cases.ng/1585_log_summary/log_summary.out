@@ -1,0 +1,134 @@
+01. PUT /v2/noService
+=====================
+HTTP/1.1 400 Bad Request
+Content-Length: 56
+Content-Type: application/json
+Fiware-Correlator: ff20ddbe-56f1-11ea-9480-0242ac110002
+Date: Mon, 24 Feb 2020 10:39:55 GMT
+
+{
+    "description": "service not found", 
+    "error": "BadRequest"
+}
+
+
+02. POST /v2/entities with invalid JSON
+=======================================
+HTTP/1.1 400 Bad Request
+Content-Length: 75
+Content-Type: application/json
+Fiware-Correlator: ff8e61a4-56f1-11ea-b54e-0242ac110002
+Date: Mon, 24 Feb 2020 10:39:56 GMT
+
+{
+    "description": "Errors found in incoming JSON buffer", 
+    "error": "ParseError"
+}
+
+
+03. GETT /v2/entities - bad verb
+================================
+HTTP/1.1 405 Method Not Allowed
+Content-Length: 63
+Content-Type: application/json
+Allow: POST, GET
+Fiware-Correlator: fffa6688-56f1-11ea-b382-0242ac110002
+Date: Mon, 24 Feb 2020 10:39:56 GMT
+
+{
+    "description": "method not allowed", 
+    "error": "MethodNotAllowed"
+}
+
+
+04. POST /v2/entities without payload
+=====================================
+HTTP/1.1 411 Length Required
+Content-Length: 98
+Content-Type: application/json
+Fiware-Correlator: 0066e664-56f2-11ea-8eb6-0242ac110002
+Date: Mon, 24 Feb 2020 10:39:57 GMT
+
+{
+    "description": "Zero/No Content-Length in PUT/POST/PATCH request", 
+    "error": "ContentLengthRequired"
+}
+
+
+05. Sleep 5 secs, awaiting a log summary report
+===============================================
+
+
+06. grep SUMMARY in log-file (4 transactions, 1 bad input)
+==========================================================
+Transactions: 4 _new: 4_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 1, new: 1_, released: _total: 0, new: 0_
+
+
+07. GET /v2/entities (just to clear out Bad Input)
+==================================================
+HTTP/1.1 200 OK
+Content-Length: 2
+Content-Type: application/json
+Fiware-Correlator: 03d74578-56f2-11ea-928a-0242ac110002
+Date: Mon, 24 Feb 2020 10:40:03 GMT
+
+[]
+
+
+08. Sleep 5 secs, awaiting a second log summary
+===============================================
+
+
+09. grep SUMMARY in log-file (1 transaction and NO bad input since last time, also, Bad Input is no longer active)
+==================================================================================================================
+Transactions: 4 _new: 4_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 1, new: 1_, released: _total: 0, new: 0_
+Transactions: 5 _new: 1_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 0, raised: _total: 1, new: 0_, released: _total: 1, new: 1_
+
+
+10. PUT /v2/noService
+=====================
+HTTP/1.1 400 Bad Request
+Content-Length: 56
+Content-Type: application/json
+Fiware-Correlator: 074838ca-56f2-11ea-8a0d-0242ac110002
+Date: Mon, 24 Feb 2020 10:40:09 GMT
+
+{
+    "description": "service not found", 
+    "error": "BadRequest"
+}
+
+
+11. Sleep 5 secs, awaiting a third log summary
+==============================================
+
+
+12. grep SUMMARY in log-file (1 transaction and one bad input since last time)
+==============================================================================
+Transactions: 4 _new: 4_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 1, new: 1_, released: _total: 0, new: 0_
+Transactions: 5 _new: 1_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 0, raised: _total: 1, new: 0_, released: _total: 1, new: 1_
+Transactions: 6 _new: 1_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 2, new: 1_, released: _total: 1, new: 0_
+Transactions: 6 _new: 0_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 2, new: 0_, released: _total: 1, new: 0_
+
+

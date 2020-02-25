@@ -1,0 +1,109 @@
+
+#
+# Provoke a few transactions and badInputs and check log summary
+#
+# Note that when running under valgrind, an initial "GET /version" is received by the 
+# broker and this message is a transaction as well, so always ONE MERE transaction when under valgrind.
+#
+# Also note that there can be only one REGEX per line and that REGEX has problems working with parenthesis.
+# Parenthesis have been changed for underscores to make this test work
+#
+# 01. PUT /v2/noService
+# 02. POST /v2/entities with invalid JSON
+# 03. GETT /v2/entities - bad verb
+# 04. POST /v2/entities without payload
+# 05. Sleep 5 secs, awaiting a log summary report
+# 06. grep SUMMARY in log-file (4 transactions, 1 bad input)
+# 07. GET /v2/entities (just to clear out Bad Input)
+# 08. Sleep 5 secs, awaiting a second log summary
+# 09. grep SUMMARY in log-file (1 transaction and NO bad input since last time, also, Bad Input is no longer active)
+# 10. PUT /v2/noService
+# 11. Sleep 5 secs, awaiting a third log summary
+# 12. grep SUMMARY in log-file (1 transaction and one bad input since last time)
+#
+
+echo "01. PUT /v2/noService"
+echo "====================="
+orionCurl --url /v2/noService
+echo
+echo
+
+
+echo "02. POST /v2/entities with invalid JSON"
+echo "======================================="
+payload='abc'
+orionCurl --url /v2/entities --payload "$payload"
+echo
+echo
+
+
+echo "03. GETT /v2/entities - bad verb"
+echo "================================"
+orionCurl --url /v2/entities -X GETT
+echo
+echo
+
+
+echo "04. POST /v2/entities without payload"
+echo "====================================="
+orionCurl --url /v2/entities -X POST
+echo
+echo
+
+
+echo "05. Sleep 5 secs, awaiting a log summary report"
+echo "==============================================="
+sleep 5
+echo
+echo
+
+
+echo "06. grep SUMMARY in log-file (4 transactions, 1 bad input)"
+echo "=========================================================="
+egrep 'SUMMARY' /tmp/contextBroker.log | awk -F'|' '{ print $10 }' | awk -F= '{ print $2 }' | sed 's/(/_/g' | sed 's/)/_/g'
+echo
+echo
+
+
+echo "07. GET /v2/entities (just to clear out Bad Input)"
+echo "=================================================="
+orionCurl --url /v2/entities
+echo
+echo
+
+
+echo "08. Sleep 5 secs, awaiting a second log summary"
+echo "==============================================="
+sleep 5
+echo
+echo
+
+
+echo "09. grep SUMMARY in log-file (1 transaction and NO bad input since last time, also, Bad Input is no longer active)"
+echo "=================================================================================================================="
+egrep 'SUMMARY' /tmp/contextBroker.log | awk -F'|' '{ print $10 }' | awk -F= '{ print $2 }' | sed 's/(/_/g' | sed 's/)/_/g'
+echo
+echo
+
+
+echo "10. PUT /v2/noService"
+echo "====================="
+orionCurl --url /v2/noService
+echo
+echo
+
+
+echo "11. Sleep 5 secs, awaiting a third log summary"
+echo "=============================================="
+sleep 5
+echo
+echo
+
+
+echo "12. grep SUMMARY in log-file (1 transaction and one bad input since last time)"
+echo "=============================================================================="
+egrep 'SUMMARY' /tmp/contextBroker.log | awk -F'|' '{ print $10 }' | awk -F= '{ print $2 }' | sed 's/(/_/g' | sed 's/)/_/g'
+echo
+echo
+
+

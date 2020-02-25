@@ -1,0 +1,44 @@
+
+#
+# Provoke a few transactions and badInputs and check number of BadInputs in log-file, compare with BadInput counter in log summary
+#
+# 01. Provoke FOUR Bad Inputs
+# 02. Sleep 3 secs, awaiting a log summary report
+# 03. grep SUMMARY in log-file (4 transactions, 1 bad input)
+# 04. grep BadInput in log-file (4 lines found)
+#
+# Request that gives only ONE BadInput:
+#   - PUT /v2/noService
+#
+
+echo "01. Provoke FOUR Bad Inputs"
+echo "==========================="
+orionCurl --url /v2/noService
+orionCurl --url /v2/entities --payload "abc"
+orionCurl --url /v2/entities -X GETT
+orionCurl --url /v2/entities -X POST
+echo
+echo
+
+
+echo "02. Sleep 3 secs, awaiting a log summary report"
+echo "==============================================="
+sleep 3
+echo
+echo
+
+
+echo "03. grep SUMMARY in log-file (4 transactions, 1 bad input)"
+echo "=========================================================="
+egrep 'SUMMARY' /tmp/contextBroker.log | awk -F'|' '{ print $10 }' | awk -F= '{ print $2 }' | sed 's/(/_/g' | sed 's/)/_/g'
+echo
+echo
+
+
+echo "04. grep BadInput in log-file (4 lines found)"
+echo "============================================="
+grep BadInput /tmp/contextBroker.log | awk -F'|' '{ print $10 }' | awk -F= '{ print $2 }'
+echo
+echo
+
+

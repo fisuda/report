@@ -1,0 +1,69 @@
+01. Provoke FOUR Bad Inputs
+===========================
+HTTP/1.1 400 Bad Request
+Content-Length: 56
+Content-Type: application/json
+Fiware-Correlator: fc15c3fa-5d22-11ea-8742-dca63270ddf5
+Date: Tue, 03 Mar 2020 07:45:42 GMT
+
+{
+    "description": "service not found", 
+    "error": "BadRequest"
+}
+HTTP/1.1 400 Bad Request
+Content-Length: 75
+Content-Type: application/json
+Fiware-Correlator: fc69f7d6-5d22-11ea-8742-dca63270ddf5
+Date: Tue, 03 Mar 2020 07:45:43 GMT
+
+{
+    "description": "Errors found in incoming JSON buffer", 
+    "error": "ParseError"
+}
+HTTP/1.1 405 Method Not Allowed
+Content-Length: 63
+Content-Type: application/json
+Allow: POST, GET
+Fiware-Correlator: fcbe71c6-5d22-11ea-8742-dca63270ddf5
+Date: Tue, 03 Mar 2020 07:45:43 GMT
+
+{
+    "description": "method not allowed", 
+    "error": "MethodNotAllowed"
+}
+HTTP/1.1 411 Length Required
+Content-Length: 98
+Content-Type: application/json
+Fiware-Correlator: fd1243fa-5d22-11ea-8742-dca63270ddf5
+Date: Tue, 03 Mar 2020 07:45:44 GMT
+
+{
+    "description": "Zero/No Content-Length in PUT/POST/PATCH request", 
+    "error": "ContentLengthRequired"
+}
+
+
+02. Sleep 3 secs, awaiting a log summary report
+===============================================
+
+
+03. grep SUMMARY in log-file (4 transactions, 1 bad input)
+==========================================================
+Transactions: 4 _new: 4_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 1, new: 1_, released: _total: 0, new: 0_
+Transactions: 4 _new: 0_
+DB status: ok, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Notification failure active alarms: 0, raised: _total: 0, new: 0_, released: _total: 0, new: 0_
+Bad input active alarms: 1, raised: _total: 1, new: 0_, released: _total: 0, new: 0_
+
+
+04. grep BadInput in log-file (4 lines found)
+=============================================
+Raising alarm BadInput 127.0.0.1: service '/v2/noService' not found
+Repeated BadInput 127.0.0.1: JSON parse error
+Repeated BadInput 127.0.0.1: bad verb for url '/v2/entities', method 'GETT'
+Repeated BadInput 127.0.0.1: {"error":"ContentLengthRequired","description":"Zero/No Content-Length in PUT/POST/PATCH request"}
+
+

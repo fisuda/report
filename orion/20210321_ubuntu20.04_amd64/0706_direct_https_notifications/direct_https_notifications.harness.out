@@ -1,0 +1,22 @@
+Sat Mar 20 17:05:23 JST 2021
+Run tests 0 to 0
+0001/1: 0706_direct_https_notifications/direct_https_notifications.test ..............................................  (ERROR 9 - .out and .regexpect differ) 
+0001/1: 0706_direct_https_notifications/direct_https_notifications.test .............................................. (intent 2) (ERROR 9 - .out and .regexpect differ) 
+0001/1: 0706_direct_https_notifications/direct_https_notifications.test .............................................. (intent 3) (FAIL 9 - .out and .regexpect differ) 
+77 seconds
+Total test time: 77.46 seconds
+
+Orion Functional Test Log File:
+================================================================================
+Orion Functional tests starting
+Sat Mar 20 17:05:23 JST 2021
+
+-----  Direct HTTP notification (accepting self signed certs)  -----
+(0706_direct_https_notifications/direct_https_notifications.test) output not as expected
+VALIDATION ERROR: input file and reference file have different line count
+
+
+================================================================================
+
+----------- Failing tests ------------------
+  o  0706_direct_https_notifications/direct_https_notifications.test

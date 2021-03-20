@@ -1,0 +1,6 @@
+${SCRIPT_HOME}/httpsPrepare.sh --keyFileName /tmp/harnessTest.key --certFileName /tmp/harnessTest.pem
+
+dbInit CB
+brokerStart CB
+accumulatorStart --pretty-print --https --key /tmp/harnessTest.key --cert /tmp/harnessTest.pem
+

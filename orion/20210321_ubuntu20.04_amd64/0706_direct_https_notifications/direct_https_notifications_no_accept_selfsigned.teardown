@@ -1,0 +1,4 @@
+brokerStop CB
+dbDrop CB
+accumulatorStop
+rm -f /tmp/harnessTest.key /tmp/harnessTest.pem

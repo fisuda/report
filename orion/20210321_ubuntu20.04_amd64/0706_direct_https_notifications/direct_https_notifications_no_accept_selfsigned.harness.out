@@ -1,0 +1,25 @@
+Sat Mar 20 17:06:40 JST 2021
+Run tests 0 to 0
+0001/1: 0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test .........................  (ERROR 9 - .out and .regexpect differ) 
+0001/1: 0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test ......................... (intent 2) (ERROR 9 - .out and .regexpect differ) 
+0001/1: 0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test ......................... (intent 3) (FAIL 9 - .out and .regexpect differ) 
+78 seconds
+Total test time: 78.16 seconds
+
+Orion Functional Test Log File:
+================================================================================
+Orion Functional tests starting
+Sat Mar 20 17:06:40 JST 2021
+
+-----  Direct HTTP notification (not accepting self signed certs)  -----
+(0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test) output not as expected
+VALIDATION ERROR: input line:
+   
+does not match ref line:
+   Peer certificate cannot be authenticated with given CA certificates
+
+
+================================================================================
+
+----------- Failing tests ------------------
+  o  0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test

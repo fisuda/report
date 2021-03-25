@@ -1,0 +1,26 @@
+$ git diff direct_https_notifications_no_accept_selfsigned.test
+diff --git a/test/functionalTest/cases/0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test b/test/functionalTest/cases/0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test
+index 812d8f36f..c6e1008d1 100644
+--- a/test/functionalTest/cases/0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test
++++ b/test/functionalTest/cases/0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test
+@@ -90,8 +90,8 @@ echo
+ echo "04. Look in the CB log for the warning about cert not accepted"
+ echo "=============================================================="
+ 
+-LINE1=$(grep "Peer certificate cannot be authenticated" /tmp/contextBroker.log | grep "notification failure" | awk -F 'notification failure for queue worker: ' '{print $2}')
+-LINE2=$(grep "Peer certificate cannot be authenticated" /tmp/contextBroker.log | grep "notification failure" | awk -F 'notification failure for sender-thread: ' '{print $2}')
++LINE1=$(grep "SSL peer certificate or SSH remote key was not OK" /tmp/contextBroker.log | grep "notification failure" | awk -F 'notification failure for queue worker: ' '{print $2}')
++LINE2=$(grep "SSL peer certificate or SSH remote key was not OK" /tmp/contextBroker.log | grep "notification failure" | awk -F 'notification failure for sender-thread: ' '{print $2}')
+ 
+ # Depending CB_THREADPOOL=ON|OFF, either LINE1 or LINE2 has the text we are looking for but not both at the same time
+ echo $LINE1$LINE2
+@@ -127,7 +127,7 @@ Date: REGEX(.*)
+ 
+ 04. Look in the CB log for the warning about cert not accepted
+ ==============================================================
+-Peer certificate cannot be authenticated with given CA certificates
++SSL peer certificate or SSH remote key was not OK
+ 
+ 
+ --TEARDOWN--
+

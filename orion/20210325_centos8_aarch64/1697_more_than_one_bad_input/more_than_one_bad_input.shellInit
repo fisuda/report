@@ -1,0 +1,4 @@
+dbInit CB
+brokerStart CB 0 IPv4 -logSummary 3 -relogAlarms
+
+

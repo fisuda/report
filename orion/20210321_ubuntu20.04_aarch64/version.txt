@@ -1,0 +1,21 @@
+{
+"orion" : { 
+  "version" : "2.6.0-next",
+  "uptime" : "0 d, 0 h, 0 m, 9 s", 
+  "git_hash" : "2d6abc3ee1d6872a4ebd5b2cd383ef2a60c1bd36",
+  "compile_time" : "Tue Mar 23 06:19:44 JST 2021",
+  "compiled_by" : "root",
+  "compiled_in" : "pi4u1",
+  "release_date" : "Tue Mar 23 06:19:44 JST 2021",
+  "doc" : "https://fiware-orion.rtfd.io/",
+  "libversions": {
+     "boost": "1_71",
+     "libcurl": "libcurl/7.68.0 GnuTLS/3.6.13 zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3",
+     "libmicrohttpd": "0.9.70",
+     "openssl": "1.1",
+     "rapidjson": "1.1.0",
+     "mongoc": "1.17.4",
+     "bson": "1.17.4"
+  }
+}
+}

@@ -1,0 +1,1343 @@
+./scripts/build/compileInfo.sh --release
+27c27
+< #define COMPILE_TIME     "Mon Mar 29 21:16:42 UTC 2021"
+---
+> #define COMPILE_TIME     "Tue Mar 23 11:59:38 UTC 2021"
+29,30c29,30
+< #define COMPILED_IN      "40dd5f95cdb1"
+< #define RELEASE_DATE     "Mon Mar 29 21:16:42 UTC 2021"
+---
+> #define COMPILED_IN      "1219995de26f"
+> #define RELEASE_DATE     "Tue Mar 23 11:59:38 UTC 2021"
+mkdir -p  BUILD_RELEASE || true
+cd BUILD_RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE -DBUILD_ARCH=aarch64 -DCMAKE_INSTALL_PREFIX=~
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/fiware-orion/BUILD_RELEASE
+cd BUILD_RELEASE && make -j4
+make[1]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[2]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[  1%] Built target lm
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[  8%] Built target pa
+[ 13%] Built target common
+[ 16%] Built target orionTypes
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 19%] Built target convenience
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 29%] Built target ngsi
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 30%] Built target ngsi9
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 34%] Built target ngsi10
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 46%] Built target serviceRoutinesV2
+[ 48%] Built target ngsiNotify
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 52%] Built target apiTypesV2
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 53%] Built target parse
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 58%] Built target jsonParse
+[ 62%] Built target rest
+[ 69%] Built target jsonParseV2
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 69%] Built target cache
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 73%] Built target mongoDriver
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 73%] Built target alarmMgr
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 80%] Built target mongoBackend
+[ 81%] Built target metricsMgr
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 81%] Built target logSummary
+Scanning dependencies of target serviceRoutines
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 81%] Building CXX object src/lib/serviceRoutines/CMakeFiles/serviceRoutines.dir/versionTreat.cpp.o
+[ 82%] Linking CXX static library libserviceRoutines.a
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target serviceRoutines
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+Scanning dependencies of target contextBroker
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+[100%] Building CXX object src/app/contextBroker/CMakeFiles/contextBroker.dir/contextBroker.cpp.o
+[100%] Linking CXX executable contextBroker
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target contextBroker
+make[2]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+make[1]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+cd BUILD_RELEASE && make install DESTDIR=/
+make[1]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[2]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[  1%] Built target lm
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[  8%] Built target pa
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 13%] Built target common
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 16%] Built target orionTypes
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 26%] Built target ngsi
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 45%] Built target serviceRoutines
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 57%] Built target serviceRoutinesV2
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 60%] Built target convenience
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 61%] Built target ngsi9
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 65%] Built target ngsi10
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 67%] Built target ngsiNotify
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 71%] Built target apiTypesV2
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 72%] Built target parse
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 77%] Built target jsonParse
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 84%] Built target jsonParseV2
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 88%] Built target rest
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 95%] Built target mongoBackend
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target mongoDriver
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target cache
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[ 99%] Built target alarmMgr
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target metricsMgr
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target logSummary
+make[3]: Entering directory '/opt/fiware-orion/BUILD_RELEASE'
+make[3]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+[100%] Built target contextBroker
+make[2]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+Install the project...
+-- Install configuration: "RELEASE"
+-- Installing: //root/bin/contextBroker
+-- Set runtime path of "//root/bin/contextBroker" to ""
+make[1]: Leaving directory '/opt/fiware-orion/BUILD_RELEASE'
+./test/functionalTest/testHarness.sh
+Mon Mar 29 21:16:55 UTC 2021
+Run tests 0 to 0
+0001/1159: 0000_bad_requests/erroneous_input.test .......................................................................  01 seconds
+0003/1159: 0000_bad_requests/pagination_error_in_uri_params.test ........................................................  03 seconds
+0004/1159: 0000_bad_requests/service_not_recognized.test ................................................................  02 seconds
+0005/1159: 0000_cli/bool_option_with_value.test .........................................................................  00 seconds
+0006/1159: 0000_cli/command_line_options.test ...........................................................................  01 seconds
+0007/1159: 0000_cli/tracelevel_without_logLevel_as_DEBUG.test ...........................................................  00 seconds
+0008/1159: 0000_cli/version.test ........................................................................................  00 seconds
+0009/1159: 0000_content_related_headers/accept_fail.test ................................................................  03 seconds
+0010/1159: 0000_content_related_headers/accept_fail_01.test .............................................................  02 seconds
+0011/1159: 0000_content_related_headers/in_out_formats.test .............................................................  03 seconds
+0012/1159: 0000_content_related_headers/missing_content_type_header.test ................................................  02 seconds
+0013/1159: 0000_content_related_headers/zero_content_length.test ........................................................  02 seconds
+0014/1159: 0000_deprecated_checkings/geoquery_circle_deprecated.test ....................................................  05 seconds
+0015/1159: 0000_deprecated_checkings/get_entity_dates_with_options.test .................................................  04 seconds
+0016/1159: 0000_deprecated_checkings/legacy_geolocalization_area_json.test ..............................................  03 seconds
+0017/1159: 0000_deprecated_checkings/legacy_geoquery_bad_coords.test ....................................................  02 seconds
+0018/1159: 0000_deprecated_checkings/legacy_geoquery_circle_json.test ...................................................  05 seconds
+0019/1159: 0000_deprecated_checkings/legacy_geoquery_polygon_json.test ..................................................  06 seconds
+0020/1159: 0000_deprecated_checkings/legacy_location_no_actual_location_change.test .....................................  02 seconds
+0021/1159: 0000_deprecated_checkings/legacy_wgs84.test ..................................................................  04 seconds
+0022/1159: 0000_deprecated_checkings/metadata_id_as_regular_metadata.test ...............................................  03 seconds
+0023/1159: 0000_deprecated_checkings/metadata_id_duplicate_error.test ...................................................  02 seconds
+0024/1159: 0000_deprecated_checkings/metadata_id_service_not_found_old_urls.test ........................................  02 seconds
+0025/1159: 0000_deprecated_checkings/ontimeinterval_subs.test ...........................................................  02 seconds
+0026/1159: 0000_deprecated_checkings/uppercase_action_types_in_ngsiv2_batch_update.test .................................  04 seconds
+0027/1159: 0000_deprecated_checkings/xml_support.test ...................................................................  02 seconds
+0028/1159: 0000_https_support/https.test ................................................................................  08 seconds
+0029/1159: 0000_ipv6_support/ipv4_ipv6_both.test ........................................................................  05 seconds
+0032/1159: 0000_json_parse/empty_payloads.test ..........................................................................  03 seconds
+0033/1159: 0000_json_parse/jsonParseBadVerbDiscoverContextAvailability.test .............................................  02 seconds
+0034/1159: 0000_json_parse/jsonParseBadVerbRegisterContext.test .........................................................  02 seconds
+0035/1159: 0000_json_parse/jsonParseContextEntitiesByEntityId.test ......................................................  02 seconds
+0036/1159: 0000_json_parse/jsonParseContextEntityAttributes.test ........................................................  03 seconds
+0037/1159: 0000_json_parse/jsonParseEntityByIdAttributeByName.test ......................................................  03 seconds
+0038/1159: 0000_json_parse/jsonParseGetNotifyContext.test ...............................................................  01 seconds
+0039/1159: 0000_json_parse/jsonParseIndividualContextEntity.test ........................................................  03 seconds
+0040/1159: 0000_json_parse/jsonParsePostDiscoverContextAvailability.test ................................................  03 seconds
+0041/1159: 0000_json_parse/jsonParsePostNotifyContext.test ..............................................................  02 seconds
+0042/1159: 0000_json_parse/jsonParsePostQueryContext.test ...............................................................  02 seconds
+0043/1159: 0000_json_parse/jsonParsePostRegisterContext.test ............................................................  02 seconds
+0044/1159: 0000_json_parse/jsonParsePostRegisterContextNoEntities.test ..................................................  02 seconds
+0045/1159: 0000_json_parse/jsonParsePostRegisterContextNoEntityId.test ..................................................  02 seconds
+0046/1159: 0000_json_parse/jsonParsePostRegisterProvider.test ...........................................................  02 seconds
+0047/1159: 0000_json_parse/jsonParsePostUnsubscribeContext.test .........................................................  02 seconds
+0048/1159: 0000_json_parse/jsonParsePostUpdateContext.test ..............................................................  02 seconds
+0049/1159: 0000_json_parse/jsonParsePostUpdateContextSubscription.test ..................................................  03 seconds
+0050/1159: 0000_json_parse/json_throttling.test .........................................................................  02 seconds
+0051/1159: 0000_large_requests/large_discover_context_availability.test .................................................  02 seconds
+0052/1159: 0000_large_requests/large_query_context.test .................................................................  02 seconds
+0053/1159: 0000_large_requests/large_register_context_request.test ......................................................  02 seconds
+0054/1159: 0000_large_requests/large_subscribe_context.test .............................................................  02 seconds
+0055/1159: 0000_large_requests/large_unsubscribe_context.test ...........................................................  02 seconds
+0056/1159: 0000_large_requests/large_update_context.test ................................................................  03 seconds
+0057/1159: 0000_large_requests/large_update_context_subscription.test ...................................................  02 seconds
+0058/1159: 0000_large_requests/notification_different_sizes.test ........................................................  14 seconds
+0059/1159: 0000_large_requests/split_request.test .......................................................................  03 seconds
+0060/1159: 0000_log_operation/log_rest.test .............................................................................  02 seconds
+0061/1159: 0000_ngsi10_compound_values/compound_convop_json.test ........................................................  03 seconds
+0062/1159: 0000_ngsi10_compound_values/compound_empty_keys_and_vector_values.test .......................................  02 seconds
+0063/1159: 0000_ngsi10_compound_values/compound_standard_json.test ......................................................  03 seconds
+0064/1159: 0000_ngsi10_compound_values/compound_subscription_json.test ..................................................  03 seconds
+0065/1159: 0000_ngsi10_compound_values/convop_attributes_as_json_objects_ngsi10.test ....................................  03 seconds
+0066/1159: 0000_ngsi10_compound_values/query_sequence_attributes_as_json_objects.test ...................................  02 seconds
+0067/1159: 0000_ngsi10_compound_values/query_sequence_attributes_as_json_objects_with_compounds.test ....................  02 seconds
+0068/1159: 0000_ngsi10_convenience/context_entity_types_attribute_container_ngsi10.test .................................  03 seconds
+0069/1159: 0000_ngsi10_convenience/context_entity_types_attribute_ngsi10.test ...........................................  02 seconds
+0070/1159: 0000_ngsi10_convenience/context_entity_types_ngsi10.test .....................................................  03 seconds
+0071/1159: 0000_ngsi10_convenience/individual_context_entity_attribute_delete_fails.test ................................  02 seconds
+0072/1159: 0000_ngsi10_convenience/individual_context_entity_attribute_delete_ok.test ...................................  02 seconds
+0073/1159: 0000_ngsi10_convenience/individual_context_entity_attribute_get_fails.test ...................................  02 seconds
+0074/1159: 0000_ngsi10_convenience/individual_context_entity_attribute_get_ok.test ......................................  02 seconds
+0075/1159: 0000_ngsi10_convenience/individual_context_entity_attribute_post_ok.test .....................................  02 seconds
+0076/1159: 0000_ngsi10_convenience/individual_context_entity_attribute_put_ok.test ......................................  03 seconds
+0077/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_delete_fails.test ...............................  02 seconds
+0078/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_delete_ok.test ..................................  02 seconds
+0079/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_get_fails.test ..................................  02 seconds
+0080/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_get_ok.test .....................................  02 seconds
+0081/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_post_create.test ................................  03 seconds
+0082/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_post_ok.test ....................................  02 seconds
+0083/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_put_create.test .................................  02 seconds
+0084/1159: 0000_ngsi10_convenience/individual_context_entity_attributes_put_ok.test .....................................  02 seconds
+0085/1159: 0000_ngsi10_convenience/individual_context_entity_delete_fails.test ..........................................  02 seconds
+0086/1159: 0000_ngsi10_convenience/individual_context_entity_delete_ok.test .............................................  03 seconds
+0087/1159: 0000_ngsi10_convenience/individual_context_entity_get_fails.test .............................................  02 seconds
+0088/1159: 0000_ngsi10_convenience/individual_context_entity_get_ok.test ................................................  02 seconds
+0089/1159: 0000_ngsi10_convenience/individual_context_entity_post_create.test ...........................................  02 seconds
+0090/1159: 0000_ngsi10_convenience/individual_context_entity_post_ok.test ...............................................  02 seconds
+0091/1159: 0000_ngsi10_convenience/individual_context_entity_put_create.test ............................................  02 seconds
+0092/1159: 0000_ngsi10_convenience/individual_context_entity_put_ok.test ................................................  02 seconds
+0093/1159: 0000_ngsi10_convenience/ngsi10_subscriptions.test ............................................................  03 seconds
+0094/1159: 0000_ngsi10_convenience/subscriptions_onchange.test ..........................................................  24 seconds
+0095/1159: 0000_ngsi10_convenience/subscriptions_onchange_nocache.test ..................................................  27 seconds
+0096/1159: 0000_ngsi10_geolocation_query/geolocalization_area_json.test .................................................  02 seconds
+0097/1159: 0000_ngsi10_geolocation_query/geoquery_bad_coords.test .......................................................  03 seconds
+0098/1159: 0000_ngsi10_geolocation_query/geoquery_circle_json.test ......................................................  05 seconds
+0099/1159: 0000_ngsi10_geolocation_query/geoquery_polygon_json.test .....................................................  06 seconds
+0100/1159: 0000_ngsi10_geolocation_query/location_no_actual_location_change.test ........................................  02 seconds
+0101/1159: 0000_ngsi10_notify/notify_context.test .......................................................................  02 seconds
+0102/1159: 0000_ngsi10_query/query_sequence.test ........................................................................  08 seconds
+0103/1159: 0000_ngsi10_subscriptions/subscription_bad_duration.test .....................................................  02 seconds
+0104/1159: 0000_ngsi10_subscriptions/subscription_sequence_onchange.test ................................................  25 seconds
+0105/1159: 0000_ngsi10_subscriptions/subscription_sequence_onchange_expiration.test .....................................  09 seconds
+0106/1159: 0000_ngsi10_subscriptions/subscription_sequence_onchange_nocache.test ........................................  27 seconds
+0107/1159: 0000_ngsi10_subscriptions/subscription_sequence_wildcards_onchange_append-simpler.test .......................  03 seconds
+0108/1159: 0000_ngsi10_subscriptions/subscription_sequence_wildcards_onchange_append.test ...............................  06 seconds
+0109/1159: 0000_ngsi10_subscriptions/subscription_sequence_wildcards_onchange_update.test ...............................  07 seconds
+0110/1159: 0000_ngsi10_subscriptions/update_context_subscription.test ...................................................  02 seconds
+0111/1159: 0000_ngsi10_update/delete_entity.test ........................................................................  02 seconds
+0112/1159: 0000_ngsi10_update/update_empty_attribute_value.test .........................................................  02 seconds
+0113/1159: 0000_ngsi10_update/update_sequence.test ......................................................................  04 seconds
+0114/1159: 0000_ngsi10_update/update_sequence_empty_value_in_context_value.test .........................................  03 seconds
+0115/1159: 0000_ngsi10_update/update_sequence_empty_value_in_context_value_json.test ....................................  02 seconds
+0116/1159: 0000_ngsi9_convenience/context_entities_by_entity_id.test ....................................................  02 seconds
+0117/1159: 0000_ngsi9_convenience/context_entity_attributes.test ........................................................  02 seconds
+0118/1159: 0000_ngsi9_convenience/context_entity_types_attribute_container_ngsi9.test ...................................  03 seconds
+0119/1159: 0000_ngsi9_convenience/context_entity_types_attribute_ngsi9.test .............................................  02 seconds
+0120/1159: 0000_ngsi9_convenience/context_entity_types_ngsi9.test .......................................................  03 seconds
+0121/1159: 0000_ngsi9_convenience/entity_by_id_attribute_by_name.test ...................................................  02 seconds
+0122/1159: 0000_ngsi9_convenience/post_context_entity_types.test ........................................................  03 seconds
+0123/1159: 0000_ngsi9_convenience/post_context_entity_types_attribute.test ..............................................  02 seconds
+0124/1159: 0000_ngsi9_convenience/post_context_entity_types_attribute_container.test ....................................  03 seconds
+0125/1159: 0000_ngsi9_registration_and_discover/check_default_duration.test .............................................  02 seconds
+0126/1159: 0000_ngsi9_registration_and_discover/registration_expired.test ...............................................  09 seconds
+0127/1159: 0000_ngsi9_registration_and_discover/registration_fail.test ..................................................  02 seconds
+0128/1159: 0000_ngsi9_registration_and_discover/registration_ok.test ....................................................  02 seconds
+0129/1159: 0000_statistics_operation/statistics.test ....................................................................  03 seconds
+0130/1159: 0000_statistics_operation/statistics_with_notifqueue.test ....................................................  02 seconds
+0131/1159: 0000_statistics_operation/statistics_with_semaphores.test ....................................................  02 seconds
+0132/1159: 0000_version_operation/version_via_rest.test .................................................................  02 seconds
+0133/1159: 0001_federation/federation.test ..............................................................................  06 seconds
+0134/1159: 0001_federation/federation_location_ngsiv1.test ..............................................................  06 seconds
+0135/1159: 0001_federation/federation_location_ngsiv2.test ..............................................................  07 seconds
+0136/1159: 0117_convop_using_standard_ops/deleteAllEntitiesWithTypeAndId.test ...........................................  03 seconds
+0137/1159: 0117_convop_using_standard_ops/deleteIndividualContextEntityAttribute.test ...................................  03 seconds
+0138/1159: 0117_convop_using_standard_ops/deleteIndividualContextEntityAttributeWithTypeAndId.test ......................  04 seconds
+0139/1159: 0117_convop_using_standard_ops/deleteIndividualContextEntity_v1_contextEntities_EID.test .....................  03 seconds
+0140/1159: 0117_convop_using_standard_ops/deleteIndividualContextEntity_v1_contextEntities_EID_attributes.test ..........  03 seconds
+0141/1159: 0117_convop_using_standard_ops/deleteSubscriptionConvOp.test .................................................  04 seconds
+0142/1159: 0117_convop_using_standard_ops/discovery_pagination.test .....................................................  05 seconds
+0143/1159: 0117_convop_using_standard_ops/getAllContextEntities.test ....................................................  06 seconds
+0144/1159: 0117_convop_using_standard_ops/getAllEntitiesWithTypeAndId.test ..............................................  03 seconds
+0145/1159: 0117_convop_using_standard_ops/getAttributesForEntityType.test ...............................................  03 seconds
+0146/1159: 0117_convop_using_standard_ops/getContextEntitiesByEntityId.test .............................................  04 seconds
+0147/1159: 0117_convop_using_standard_ops/getContextEntitiesByEntityIdAndType.test ......................................  04 seconds
+0148/1159: 0117_convop_using_standard_ops/getContextEntityAttributes.test ...............................................  03 seconds
+0149/1159: 0117_convop_using_standard_ops/getContextEntityTypeAttribute.test ............................................  04 seconds
+0150/1159: 0117_convop_using_standard_ops/getContextEntityTypes.test ....................................................  03 seconds
+0151/1159: 0117_convop_using_standard_ops/getEntityByIdAttributeByName.test .............................................  04 seconds
+0152/1159: 0117_convop_using_standard_ops/getEntityByIdAttributeByNameWithTypeAndId.test ................................  06 seconds
+0153/1159: 0117_convop_using_standard_ops/getEntityTypes.test ...........................................................  04 seconds
+0154/1159: 0117_convop_using_standard_ops/getIndividualContextEntity.test ...............................................  03 seconds
+0155/1159: 0117_convop_using_standard_ops/getIndividualContextEntityAttribute.test ......................................  05 seconds
+0156/1159: 0117_convop_using_standard_ops/getIndividualContextEntityAttributeWithTypeAndId.test .........................  06 seconds
+0157/1159: 0117_convop_using_standard_ops/getIndividualContextEntityAttributes.test .....................................  03 seconds
+0158/1159: 0117_convop_using_standard_ops/getNgsi10ContextEntityTypes.test ..............................................  04 seconds
+0159/1159: 0117_convop_using_standard_ops/getNgsi10ContextEntityTypesAttribute.test .....................................  03 seconds
+0160/1159: 0117_convop_using_standard_ops/postAllEntitiesWithTypeAndId.test .............................................  04 seconds
+0161/1159: 0117_convop_using_standard_ops/postContextEntitiesByEntityId.test ............................................  04 seconds
+0162/1159: 0117_convop_using_standard_ops/postContextEntitiesByEntityIdAndType.test .....................................  04 seconds
+0163/1159: 0117_convop_using_standard_ops/postContextEntityAttributes.test ..............................................  05 seconds
+0164/1159: 0117_convop_using_standard_ops/postContextEntityTypeAttribute.test ...........................................  03 seconds
+0165/1159: 0117_convop_using_standard_ops/postContextEntityTypes.test ...................................................  02 seconds
+0166/1159: 0117_convop_using_standard_ops/postEntityByIdAttributeByName.test ............................................  05 seconds
+0167/1159: 0117_convop_using_standard_ops/postEntityByIdAttributeByNameWithTypeAndId.test ...............................  04 seconds
+0168/1159: 0117_convop_using_standard_ops/postIndividualContextEntityAttribute.test .....................................  03 seconds
+0169/1159: 0117_convop_using_standard_ops/postIndividualContextEntityAttributeWithTypeAndId.test ........................  03 seconds
+0170/1159: 0117_convop_using_standard_ops/postIndividualContextEntity_v1_contextEntities.test ...........................  03 seconds
+0171/1159: 0117_convop_using_standard_ops/postIndividualContextEntity_v1_contextEntities_EID.test .......................  04 seconds
+0172/1159: 0117_convop_using_standard_ops/postIndividualContextEntity_v1_contextEntities_EID_attributes.test ............  03 seconds
+0173/1159: 0117_convop_using_standard_ops/postSubscribeContextConvOp.test ...............................................  04 seconds
+0174/1159: 0117_convop_using_standard_ops/putAllEntitiesWithTypeAndId.test ..............................................  05 seconds
+0175/1159: 0117_convop_using_standard_ops/putIndividualContextEntity.test ...............................................  06 seconds
+0176/1159: 0117_convop_using_standard_ops/putIndividualContextEntityAttribute.test ......................................  04 seconds
+0177/1159: 0117_convop_using_standard_ops/putIndividualContextEntityAttributeWithTypeAndId.test .........................  06 seconds
+0178/1159: 0117_convop_using_standard_ops/putIndividualContextEntityAttributes.test .....................................  05 seconds
+0179/1159: 0117_convop_using_standard_ops/putSubscriptionConvOp.test ....................................................  07 seconds
+0180/1159: 0208_expiration_overflow_fix/registration_64bit_duration.test ................................................  02 seconds
+0181/1159: 0252_ngsi10_custom_metadata/custom_metadata_onchange.test ....................................................  04 seconds
+0182/1159: 0252_ngsi10_custom_metadata/custom_metadata_update_query.test ................................................  03 seconds
+0183/1159: 0322_multitenancy/http_tenant_name_error.test ................................................................  04 seconds
+0184/1159: 0322_multitenancy/http_tenant_register_discovery.test ........................................................  04 seconds
+0185/1159: 0322_multitenancy/http_tenant_subscribe_and_update.test ......................................................  06 seconds
+0186/1159: 0322_multitenancy/http_tenant_update_query.test ..............................................................  04 seconds
+0187/1159: 0322_multitenancy/tenant_in_notification.test ................................................................  04 seconds
+0188/1159: 0322_multitenancy/tenant_name_error.test .....................................................................  03 seconds
+0189/1159: 0322_multitenancy/tenant_upperlowercase.test .................................................................  04 seconds
+0190/1159: 0322_multitenancy/tenant_upperlowercase_http_header.test .....................................................  05 seconds
+0191/1159: 0350_onanychange_subscriptions/onanychange_empty_cond_values.test ............................................  04 seconds
+0192/1159: 0350_onanychange_subscriptions/onanychange_empty_cond_values_nocache.test ....................................  04 seconds
+0193/1159: 0350_onanychange_subscriptions/onanychange_omit_cond_values.test .............................................  05 seconds
+0194/1159: 0350_onanychange_subscriptions/onanychange_omit_cond_values_nocache.test .....................................  04 seconds
+0195/1159: 0392_service_path_update_and_query/service_path_http_header.test .............................................  03 seconds
+0196/1159: 0392_service_path_update_and_query/update_with_service_path.test .............................................  04 seconds
+0197/1159: 0499_context_providers_basic/query_redirect_operation.test ...................................................  05 seconds
+0198/1159: 0499_context_providers_basic/query_redirect_three_providers.test .............................................  10 seconds
+0199/1159: 0499_context_providers_basic/update_redirect_delete_operation.test ...........................................  05 seconds
+0200/1159: 0499_context_providers_basic/update_redirect_operation.test ..................................................  06 seconds
+0201/1159: 0501_cors/allowed_headers.test ...............................................................................  02 seconds
+0202/1159: 0501_cors/allowed_methods.test ...............................................................................  03 seconds
+0203/1159: 0501_cors/any_origin.test ....................................................................................  03 seconds
+0204/1159: 0501_cors/cors_bad_verbs.test ................................................................................  03 seconds
+0205/1159: 0501_cors/cors_disabled.test .................................................................................  03 seconds
+0206/1159: 0501_cors/exposed_headers.test ...............................................................................  02 seconds
+0207/1159: 0501_cors/get_any_origin.test ................................................................................  03 seconds
+0208/1159: 0501_cors/get_specific_origin.test ...........................................................................  03 seconds
+0209/1159: 0501_cors/max_age.test .......................................................................................  02 seconds
+0210/1159: 0501_cors/max_age_default.test ...............................................................................  02 seconds
+0211/1159: 0501_cors/registration_cors.test .............................................................................  03 seconds
+0212/1159: 0501_cors/specific_origin.test ...............................................................................  03 seconds
+0213/1159: 0501_cors/version_request.test ...............................................................................  03 seconds
+0214/1159: 0519_ngsi10_entity_types_listing/contextEntityTypeAttributes.test ............................................  02 seconds
+0215/1159: 0519_ngsi10_entity_types_listing/contextEntityTypes.test .....................................................  03 seconds
+0216/1159: 0559_new_url_paths/ngsi10_new_url_paths.test .................................................................  06 seconds
+0217/1159: 0559_new_url_paths/ngsi9_new_url_paths.test ..................................................................  04 seconds
+0218/1159: 0559_new_url_paths/v1_paths.test .............................................................................  06 seconds
+0219/1159: 0559_new_url_paths/v1_registry.test ..........................................................................  05 seconds
+0220/1159: 0563_ngsi10_get_list_of_all_entities/all_entities_no_filter.test .............................................  02 seconds
+0221/1159: 0570_filters_for_entity_type/all_entities_with_emptyType.test ................................................  04 seconds
+0222/1159: 0570_filters_for_entity_type/all_entities_with_filter.test ...................................................  03 seconds
+0223/1159: 0570_filters_for_entity_type/all_entities_with_type_as_uri_param.test ........................................  03 seconds
+0224/1159: 0570_filters_for_entity_type/emptyType_delete.test ...........................................................  03 seconds
+0225/1159: 0570_filters_for_entity_type/emptyType_post.test .............................................................  03 seconds
+0226/1159: 0570_filters_for_entity_type/emptyType_put.test ..............................................................  03 seconds
+0227/1159: 0570_filters_for_entity_type/individual_entities_with_emptyType.test .........................................  03 seconds
+0228/1159: 0570_filters_for_entity_type/individual_entities_with_type_as_uri_param.test .................................  02 seconds
+0229/1159: 0581_include_type_in_convops/v1_contextEntities_enType_ENTYPE_enId_ENID.test .................................  04 seconds
+0230/1159: 0581_include_type_in_convops/v1_contextEntities_enType_ENTYPE_enId_ENID_JSON.test ............................  04 seconds
+0231/1159: 0581_include_type_in_convops/v1_contextEntities_enType_ENTYPE_enId_ENID_attribute.test .......................  04 seconds
+0232/1159: 0581_include_type_in_convops/v1_registry_contextEntities_enType_ENTYPE_enId_ENID.test ........................  03 seconds
+0233/1159: 0581_include_type_in_convops/v1_registry_contextEntities_enType_ENTYPE_enId_ENID_attribute_attrName.test .....  03 seconds
+0234/1159: 0585_empty_type_in_response/ngsi10.test ......................................................................  03 seconds
+0235/1159: 0585_empty_type_in_response/ngsi9.test .......................................................................  04 seconds
+0236/1159: 0613_POST_v1_contextEntities/v1_contextEntities_without_entity.test ..........................................  03 seconds
+0237/1159: 0616_len_of_FiwareService_string/dbname_max_chars.test .......................................................  01 seconds
+0238/1159: 0619_forbidden_characters_in_payload/input.test ..............................................................  03 seconds
+0239/1159: 0633_new_name_for_json_object_rendering/convop_attributes_as_json_objects.test ...............................  03 seconds
+0240/1159: 0640_attribute_name_unique_key_field/notify_type_change.test .................................................  05 seconds
+0241/1159: 0640_attribute_name_unique_key_field/updating_types.test .....................................................  03 seconds
+0242/1159: 0642_service_path_entity_without_type/servicepath_entity_without_type.test ...................................  03 seconds
+0243/1159: 0646_servicepath_children/servicepath_all_children.test ......................................................  04 seconds
+0244/1159: 0646_servicepath_children/servicepath_default.test ...........................................................  03 seconds
+0245/1159: 0647_crash_with_compounds/POST_UpdateContextRequest.test .....................................................  03 seconds
+0246/1159: 0647_crash_with_compounds/POST_notifyContextRequest.test .....................................................  02 seconds
+0247/1159: 0647_crash_with_compounds/PUT_v1_contextEntities_E1_attributes_A1.test .......................................  03 seconds
+0248/1159: 0647_crash_with_compounds/PUT_v1_contextEntities_entityId.test ...............................................  03 seconds
+0249/1159: 0672_forbidden_chars_in_url/all_forbidden_chars_in_uri.test ..................................................  03 seconds
+0250/1159: 0673_xauth_token/auth_token_from_subscribe_request.test ......................................................  10 seconds
+0251/1159: 0673_xauth_token/auth_token_three_steps.test .................................................................  10 seconds
+0252/1159: 0673_xauth_token/subscription.test ...........................................................................  07 seconds
+0253/1159: 0674_servicepath_in_notifications/service_path_in_onchange_notification.test .................................  04 seconds
+0254/1159: 0674_servicepath_in_notifications/service_path_in_single_onchange_notification.test ..........................  04 seconds
+0255/1159: 0675_servicePath_in_ngsi10_subscriptions/erroneous_ngsi10_subscription_with_two_service_paths.test ...........  03 seconds
+0256/1159: 0675_servicePath_in_ngsi10_subscriptions/simple_ngsi10_subscription_both_cities_with_isPattern_and_deeper_serv  06 seconds
+0257/1159: 0675_servicePath_in_ngsi10_subscriptions/simple_ngsi10_subscription_exact_city_with_isPattern_and_deeper_servi  05 seconds
+0258/1159: 0675_servicePath_in_ngsi10_subscriptions/simple_ngsi10_subscription_with_isPattern_and_deeper_service_path.tes  05 seconds
+0259/1159: 0675_servicePath_in_ngsi10_subscriptions/simple_ngsi10_subscription_with_recursive_service_path.test .........  05 seconds
+0260/1159: 0675_servicePath_in_ngsi10_subscriptions/simple_ngsi10_subscription_with_recursive_service_path_and_isPattern.  05 seconds
+0261/1159: 0676_servicepath_context_types/servicepath_context_types.test ................................................  04 seconds
+0262/1159: 0676_servicepath_context_types/servicepath_default_context_types.test ........................................  03 seconds
+0263/1159: 0676_servicepath_context_types/servicepath_sametype.test .....................................................  04 seconds
+0264/1159: 0676_servicepath_context_types/servicepath_specific_sametype.test ............................................  04 seconds
+0265/1159: 0684_entity_type_missing/entity_type_missing_in_v1_contextEntities.test ......................................  03 seconds
+0266/1159: 0686_contextTypes_with_no_attributes/contextTypes_with_no_attributes.test ....................................  03 seconds
+0267/1159: 0690_geoquery_crash/invalid_polygon_geoscope.test ............................................................  03 seconds
+0268/1159: 0691_empty_type_and_subscriptions/simple_ngsi10_subscriptions_with_empty_type_and_service_path.test ..........  04 seconds
+0269/1159: 0691_empty_type_and_subscriptions/simple_ngsi10_subscriptions_with_no_type_and_service_path.test .............  06 seconds
+0270/1159: 0706_direct_https_notifications/direct_https_notifications.test ..............................................  04 seconds
+0271/1159: 0706_direct_https_notifications/direct_https_notifications_no_accept_selfsigned.test .........................  05 seconds
+0272/1159: 0713_propagate_tenant/propagate_tenant_for_update_and_query_standard_ops.test ................................  07 seconds
+0273/1159: 0714_propagate_service_path/no_propagation_of_service_path_when_not_present.test .............................  04 seconds
+0274/1159: 0714_propagate_service_path/propagate_service_path_for_update_and_query_standard_ops.test ....................  06 seconds
+0275/1159: 0715_forward_xauth_token_to_cprs/propagate_xauth_token_for_update_and_query_standard_ops.test ................  04 seconds
+0276/1159: 0716_forward_registered_attributes/forward_attribute.test ....................................................  06 seconds
+0277/1159: 0716_forward_registered_attributes/forward_attribute_query.test ..............................................  05 seconds
+0278/1159: 0719_servicepath_for_registrations/forward_attribute_with_servicePath.test ...................................  16 seconds
+0279/1159: 0719_servicepath_for_registrations/forward_queries.test ......................................................  18 seconds
+0280/1159: 0719_servicepath_for_registrations/register_and_discovery_with_invalid_service_paths.test ....................  03 seconds
+0281/1159: 0719_servicepath_for_registrations/register_and_discovery_with_many_servicepaths.test ........................  03 seconds
+0282/1159: 0719_servicepath_for_registrations/register_and_discovery_with_servicepath.test ..............................  04 seconds
+0283/1159: 0725_multiservice_ignore/service_ignore_without_multiservice.test ............................................  04 seconds
+0284/1159: 0740_crash_with_json_object_for_attributes/json_object_format.test ...........................................  03 seconds
+0285/1159: 0746_valid_service_path_for_updates/invalid_service_paths.test ...............................................  03 seconds
+0286/1159: 0766_attribute_metadata_update/attribute_metadata_update.test ................................................  03 seconds
+0287/1159: 0766_attribute_metadata_update/attribute_metadata_update_compound_object.test ................................  04 seconds
+0288/1159: 0766_attribute_metadata_update/attribute_metadata_update_compound_vector.test ................................  03 seconds
+0289/1159: 0772_bad_json_response_in_convop/post_v1_contextEntities_ID_attributes_ATTR.test .............................  03 seconds
+0290/1159: 0773_not_found_in_context_provider/not_found_in_context_provider.test ........................................  16 seconds
+0291/1159: 0787_cprs_full_functional/append_attribute_that_doesnt_exist.test ............................................  03 seconds
+0292/1159: 0787_cprs_full_functional/delete_attribute_that_does_exist.test ..............................................  03 seconds
+0293/1159: 0787_cprs_full_functional/delete_attribute_that_does_exist_with_convop.test ..................................  03 seconds
+0294/1159: 0787_cprs_full_functional/delete_attribute_that_doesnt_exist.test ............................................  03 seconds
+0295/1159: 0787_cprs_full_functional/query_double_forward.test ..........................................................  07 seconds
+0296/1159: 0787_cprs_full_functional/query_false_registration.test ......................................................  05 seconds
+0297/1159: 0787_cprs_full_functional/query_false_registration_and_one_more_value.test ...................................  06 seconds
+0298/1159: 0787_cprs_full_functional/query_false_registration_and_one_more_value_in_provider.test .......................  07 seconds
+0299/1159: 0787_cprs_full_functional/query_five_different_cprs_in_one_query.test ........................................  15 seconds
+0300/1159: 0787_cprs_full_functional/query_forward_depends_on_attr_field.test ...........................................  11 seconds
+0301/1159: 0787_cprs_full_functional/query_forward_query_not_found.test .................................................  05 seconds
+0302/1159: 0787_cprs_full_functional/query_found_and_not_found_locally_and_remote.test ..................................  12 seconds
+0303/1159: 0787_cprs_full_functional/query_local_query_found.test .......................................................  03 seconds
+0304/1159: 0787_cprs_full_functional/query_local_query_not_found.test ...................................................  08 seconds
+0305/1159: 0787_cprs_full_functional/query_no_attributes_in_query_results_from_CB_and_CP1.test ..........................  05 seconds
+0306/1159: 0787_cprs_full_functional/query_no_attributes_in_query_results_from_CP1_and_CP2.test .........................  08 seconds
+0307/1159: 0787_cprs_full_functional/query_one_forward.test .............................................................  06 seconds
+0308/1159: 0787_cprs_full_functional/query_shadowed_attribute.test ......................................................  05 seconds
+0309/1159: 0787_cprs_full_functional/query_simple.test ..................................................................  03 seconds
+0310/1159: 0787_cprs_full_functional/query_two_attributes_in_cpr_one_local.test .........................................  08 seconds
+0311/1159: 0787_cprs_full_functional/query_two_attributes_in_one_cpr_three_in_another.test ..............................  09 seconds
+0312/1159: 0787_cprs_full_functional/query_with_contextElement_providingApplicationList.test ............................  11 seconds
+0313/1159: 0787_cprs_full_functional/update_attribute_that_doesnt_exist.test ............................................  03 seconds
+0314/1159: 0787_cprs_full_functional/update_double_forward.test .........................................................  08 seconds
+0315/1159: 0787_cprs_full_functional/update_false_registration.test .....................................................  06 seconds
+0316/1159: 0787_cprs_full_functional/update_false_registration_and_one_more_value.test ..................................  05 seconds
+0317/1159: 0787_cprs_full_functional/update_false_registration_and_one_more_value_in_provider.test ......................  08 seconds
+0318/1159: 0787_cprs_full_functional/update_five_different_cprs_in_one_query.test .......................................  17 seconds
+0319/1159: 0787_cprs_full_functional/update_forward_depends_on_attr_field.test ..........................................  11 seconds
+0320/1159: 0787_cprs_full_functional/update_found_and_not_found_in_local_and_three_cprs.test ............................  11 seconds
+0321/1159: 0787_cprs_full_functional/update_local_found.test ............................................................  04 seconds
+0322/1159: 0787_cprs_full_functional/update_local_not_found.test ........................................................  03 seconds
+0323/1159: 0787_cprs_full_functional/update_one_forward.test ............................................................  06 seconds
+0324/1159: 0787_cprs_full_functional/update_shadowed_attribute.test .....................................................  06 seconds
+0325/1159: 0787_cprs_full_functional/update_three_found_on_cps_two_local_four_not_found.test ............................  12 seconds
+0326/1159: 0787_cprs_full_functional_v2/ngsiv2_query_double_forward.test ................................................  08 seconds
+0327/1159: 0787_cprs_full_functional_v2/ngsiv2_query_false_registration.test ............................................  06 seconds
+0328/1159: 0787_cprs_full_functional_v2/ngsiv2_query_false_registration_and_one_more_value.test .........................  05 seconds
+0329/1159: 0787_cprs_full_functional_v2/ngsiv2_query_false_registration_and_one_more_value_in_provider.test .............  09 seconds
+0330/1159: 0787_cprs_full_functional_v2/ngsiv2_query_five_different_cprs_in_one_query.test ..............................  16 seconds
+0331/1159: 0787_cprs_full_functional_v2/ngsiv2_query_forward_depends_on_attr_field.test .................................  11 seconds
+0332/1159: 0787_cprs_full_functional_v2/ngsiv2_query_forward_query_not_found.test .......................................  06 seconds
+0333/1159: 0787_cprs_full_functional_v2/ngsiv2_query_found_and_not_found_locally_and_remote.test ........................  13 seconds
+0334/1159: 0787_cprs_full_functional_v2/ngsiv2_query_no_attributes_in_query_results_from_CB_and_CP1.test ................  06 seconds
+0335/1159: 0787_cprs_full_functional_v2/ngsiv2_query_no_attributes_in_query_results_from_CP1_and_CP2.test ...............  08 seconds
+0336/1159: 0787_cprs_full_functional_v2/ngsiv2_query_one_forward_query.test .............................................  06 seconds
+0337/1159: 0787_cprs_full_functional_v2/ngsiv2_query_shadowed_attribute.test ............................................  06 seconds
+0338/1159: 0787_cprs_full_functional_v2/ngsiv2_query_two_attributes_in_cpr_one_local.test ...............................  09 seconds
+0339/1159: 0787_cprs_full_functional_v2/ngsiv2_query_two_attributes_in_one_cpr_three_in_another.test ....................  10 seconds
+0340/1159: 0787_cprs_full_functional_v2/ngsiv2_update_double_forward.test ...............................................  08 seconds
+0341/1159: 0787_cprs_full_functional_v2/ngsiv2_update_false_registration.test ...........................................  06 seconds
+0342/1159: 0787_cprs_full_functional_v2/ngsiv2_update_false_registration_and_one_more_value.test ........................  06 seconds
+0343/1159: 0787_cprs_full_functional_v2/ngsiv2_update_false_registration_and_one_more_value_in_provider.test ............  09 seconds
+0344/1159: 0787_cprs_full_functional_v2/ngsiv2_update_five_different_cprs_in_one_query.test .............................  17 seconds
+0345/1159: 0787_cprs_full_functional_v2/ngsiv2_update_forward_depends_on_attr_field.test ................................  13 seconds
+0346/1159: 0787_cprs_full_functional_v2/ngsiv2_update_found_and_not_found_in_local_and_three_cprs.test ..................  12 seconds
+0347/1159: 0787_cprs_full_functional_v2/ngsiv2_update_one_forward.test ..................................................  06 seconds
+0348/1159: 0787_cprs_full_functional_v2/ngsiv2_update_shadowed_attribute.test ...........................................  06 seconds
+0349/1159: 0787_cprs_full_functional_v2/ngsiv2_update_three_found_on_cps_two_local_four_not_found.test ..................  13 seconds
+0350/1159: 0828_slash_at_end_of_uri_path/slash_or_no_slash_gives_same_result.test .......................................  04 seconds
+0351/1159: 0864_filter_string_scope/filter_string_scope.test ............................................................  03 seconds
+0352/1159: 0876_attribute_dates/attribute_dates.test ....................................................................  07 seconds
+0353/1159: 0876_attribute_dates/attrs_dates_overridden_by_user.test .....................................................  04 seconds
+0354/1159: 0876_attribute_dates/attrs_dates_overridden_by_user_subs.test ................................................  05 seconds
+0355/1159: 0876_attribute_dates/filter_attr_datecreated_sub.test ........................................................  20 seconds
+0356/1159: 0876_attribute_dates/filter_attr_datemodified_sub.test .......................................................  11 seconds
+0357/1159: 0876_attribute_dates/filter_attr_dates.test ..................................................................  10 seconds
+0358/1159: 0876_attribute_dates/get_attr_dates_with_metadata.test .......................................................  06 seconds
+0359/1159: 0876_attribute_dates/notify_attr_dates_with_metadata.test ....................................................  06 seconds
+0360/1159: 0876_entity_dates/entity_dates_overridden_by_user.test .......................................................  05 seconds
+0361/1159: 0876_entity_dates/entity_dates_overridden_by_user_subs.test ..................................................  05 seconds
+0362/1159: 0876_entity_dates/filter_datecreated_sub.test ................................................................  16 seconds
+0363/1159: 0876_entity_dates/filter_datemodified_sub.test ...............................................................  11 seconds
+0364/1159: 0876_entity_dates/filter_entity_dates.test ...................................................................  10 seconds
+0365/1159: 0876_entity_dates/get_entity_dates.test ......................................................................  06 seconds
+0366/1159: 0876_entity_dates/get_entity_dates_with_attr.test ............................................................  06 seconds
+0367/1159: 0876_entity_dates/notify_entity_dates_with_attr.test .........................................................  06 seconds
+0368/1159: 0878_attributes_with_dot/basic_dot_attr.test .................................................................  04 seconds
+0369/1159: 0880_timeout_for_forward_and_notifications/forward_that_times_out.test .......................................  27 seconds
+0370/1159: 0885_service_path_and_delete/delete_with_service_path.test ...................................................  03 seconds
+0371/1159: 0889_writeConcern_configurable/update_with_writeConcern_acknowledged.test ....................................  04 seconds
+0372/1159: 0889_writeConcern_configurable/update_with_writeConcern_unacknowledged.test ..................................  03 seconds
+0373/1159: 0908_update_duplicated_attributes/dup_attrs_avoid_db_error.test ..............................................  04 seconds
+0375/1159: 0920_make_initial_notification_in_subscriptions_configurable/0920_make_initial_notification_configurable_NGSIv  04 seconds
+0376/1159: 0943_overnotification_bug/overnotification_bug.test ..........................................................  05 seconds
+0377/1159: 0945_pagination_with_cprs/pagination_with_cprs.test ..........................................................  07 seconds
+0378/1159: 0945_pagination_with_cprs/pagination_with_cprs_mix_entities.test .............................................  09 seconds
+0379/1159: 0945_pagination_with_cprs/pagination_with_cprs_mix_entities2.test ............................................  09 seconds
+0380/1159: 0947_v2_list_all_entities/GET_v2_all_entities.test ...........................................................  04 seconds
+0381/1159: 0947_v2_list_all_entities/GET_v2_all_entities_pagination.test ................................................  04 seconds
+0382/1159: 0950_GET_v2_entity/GET_v2_entity.test ........................................................................  03 seconds
+0383/1159: 0950_GET_v2_entity/GET_v2_entity_not_found.test ..............................................................  04 seconds
+0384/1159: 0950_GET_v2_entity/GET_v2_entity_too_many.test ...............................................................  03 seconds
+0385/1159: 0951_get_v2_param_type/get_v2_param_type.test ................................................................  04 seconds
+0386/1159: 0953_list_all_ents_id/GET_all_entities.test ..................................................................  04 seconds
+0387/1159: 0953_list_all_ents_id/GET_all_entities_pagination.test .......................................................  04 seconds
+0388/1159: 0953_list_all_ents_id/GET_v2_entities_both_params.test .......................................................  03 seconds
+0389/1159: 0953_list_all_ents_id/GET_v2_entities_id_several.test ........................................................  04 seconds
+0390/1159: 0953_list_all_ents_id/GET_v2_entities_id_type.test ...........................................................  04 seconds
+0391/1159: 0953_list_all_ents_id/GET_v2_entities_pattern.test ...........................................................  04 seconds
+0392/1159: 0953_list_all_ents_id/GET_v2_entities_pattern_type.test ......................................................  04 seconds
+0393/1159: 0953_list_all_ents_id/GET_v2_entities_type.test ..............................................................  04 seconds
+0394/1159: 0956_v2_list_entry_points/GET_v2_list_entry_points.test ......................................................  03 seconds
+0395/1159: 0967_v2_query_op/illegal_chars_in_url_param.test .............................................................  04 seconds
+0396/1159: 0967_v2_query_op/q_in_uri_param_to_scope.test ................................................................  04 seconds
+0397/1159: 0968_ngsi10_asterisk_subs/0968_ngsi10_asterisk_subs.test .....................................................  03 seconds
+0398/1159: 0970_create_entity/compound_creation.test ....................................................................  04 seconds
+0399/1159: 0970_create_entity/compound_creation02.test ..................................................................  03 seconds
+0400/1159: 0970_create_entity/compound_inside_attribute_object.test .....................................................  04 seconds
+0401/1159: 0970_create_entity/compound_vector.test ......................................................................  03 seconds
+0402/1159: 0970_create_entity/compound_vector_with_objects.test .........................................................  03 seconds
+0403/1159: 0970_create_entity/creation_with_attribute_as_object.test ....................................................  04 seconds
+0404/1159: 0970_create_entity/creation_with_metadata.test ...............................................................  03 seconds
+0405/1159: 0970_create_entity/empty_attribute_value.test ................................................................  04 seconds
+0406/1159: 0970_create_entity/errors_at_creation.test ...................................................................  04 seconds
+0407/1159: 0970_create_entity/simple_creation.test ......................................................................  03 seconds
+0408/1159: 0971_GET_v2_entity_param_attrs/GET_v2_entity_all_attrs.test ..................................................  04 seconds
+0409/1159: 0971_GET_v2_entity_param_attrs/GET_v2_entity_one_attr.test ...................................................  04 seconds
+0410/1159: 0978_filter_attribute_pattern/csub_attribute_pattern.test ....................................................  05 seconds
+0411/1159: 0978_filter_attribute_pattern/csub_attribute_pattern_nocache.test ............................................  05 seconds
+0412/1159: 0978_filter_attribute_pattern/filter_attribute_pattern.test ..................................................  04 seconds
+0413/1159: 0979_patch_v2_entities_eid/patch_v2_entities_eid.test ........................................................  04 seconds
+0414/1159: 0980_patch_entity_v2_wihth_param_type/patch_entity_with_param_type.test ......................................  04 seconds
+0415/1159: 0981_POST_v2_attributes/append_and_append_only_combinations.test .............................................  04 seconds
+0416/1159: 0981_POST_v2_attributes/append_only_attribute_already_there.test .............................................  04 seconds
+0417/1159: 0981_POST_v2_attributes/append_only_error_if_exists.test .....................................................  04 seconds
+0418/1159: 0982_post_entity_with_type_param/982_post_entity_with_type_param.test ........................................  04 seconds
+0419/1159: 0985_DELETE_v2_entity/delete_not_exist.test ..................................................................  04 seconds
+0420/1159: 0985_DELETE_v2_entity/delete_ok.test .........................................................................  03 seconds
+0421/1159: 0986_delete_with_type_param/delete_with_type_param.test ......................................................  04 seconds
+0422/1159: 0987_put_attributes/put_entity_complete_replace_attributes.test ..............................................  04 seconds
+0423/1159: 0987_put_attributes/put_entity_error.test ....................................................................  04 seconds
+0424/1159: 0987_put_attributes/put_entity_error_01.test .................................................................  04 seconds
+0425/1159: 0987_put_attributes/put_entity_partially_replace_attributes.test .............................................  03 seconds
+0426/1159: 0988_put_with_param_type/put_with_param_type.test ............................................................  04 seconds
+0427/1159: 0989_GET_v2_entity_attribute/GET_v2_entity_attribute.test ....................................................  04 seconds
+0428/1159: 0989_GET_v2_entity_attribute/GET_v2_entity_attribute_ent_not_found.test ......................................  04 seconds
+0429/1159: 0989_GET_v2_entity_attribute/GET_v2_entity_attribute_not_found.test ..........................................  04 seconds
+0430/1159: 0989_GET_v2_entity_attribute/GET_v2_entity_attribute_too_many.test ...........................................  03 seconds
+0431/1159: 0991_update_single_attr_by_eid/update_one_of_two_attributes_changing_type_and_metadata.test ..................  05 seconds
+0432/1159: 0993_DELETE_v2_entity_attr/delete_attr_not_exist.test ........................................................  03 seconds
+0433/1159: 0993_DELETE_v2_entity_attr/delete_attr_ok.test ...............................................................  04 seconds
+0434/1159: 0993_DELETE_v2_entity_attr/delete_not_exist_attr.test ........................................................  04 seconds
+0435/1159: 0997_GET_v2_entity_single_attribute_value/GET_v2_entity_single_attribute_value.test ..........................  04 seconds
+0436/1159: 0997_GET_v2_entity_single_attribute_value/GET_v2_entity_single_attribute_value_ent_not_found.test ............  03 seconds
+0437/1159: 0997_GET_v2_entity_single_attribute_value/GET_v2_entity_single_attribute_value_not_found.test ................  04 seconds
+0438/1159: 0997_GET_v2_entity_single_attribute_value/GET_v2_entity_single_attribute_value_too_many.test .................  04 seconds
+0439/1159: 0999_update_single_attr_value_by_eid/update_one_of_two_attributes.test .......................................  04 seconds
+0440/1159: 0999_update_single_attr_value_by_eid/update_single_attr_by_eid.test ..........................................  05 seconds
+0441/1159: 0999_update_single_attr_value_by_eid/update_single_attr_value_by_eid_fake_field_cases.test ...................  04 seconds
+0442/1159: 1005_GET_v2_entities_string/GET_v2_entities_string.test ......................................................  03 seconds
+0443/1159: 1016_cpr_forward_limit/fwd_query_limited.test ................................................................  21 seconds
+0444/1159: 1016_cpr_forward_limit/fwd_query_unlimited.test ..............................................................  20 seconds
+0445/1159: 1016_cpr_forward_limit/fwd_query_zero_limit.test .............................................................  20 seconds
+0446/1159: 1016_cpr_forward_limit/fwd_update_limited.test ...............................................................  21 seconds
+0447/1159: 1016_cpr_forward_limit/fwd_update_unlimited.test .............................................................  21 seconds
+0448/1159: 1016_cpr_forward_limit/fwd_update_zero_limit.test ............................................................  21 seconds
+0449/1159: 1027_get_all_entity_types/get_all_entity_types.test ..........................................................  04 seconds
+0450/1159: 1028_get_entity_type/get_entity_type.test ....................................................................  05 seconds
+0451/1159: 1038_ngsiv2_geo_location_entities/entity_location_shape_changes.test .........................................  06 seconds
+0452/1159: 1038_ngsiv2_geo_location_entities/errors_general.test ........................................................  06 seconds
+0453/1159: 1038_ngsiv2_geo_location_entities/errors_geobox.test .........................................................  06 seconds
+0454/1159: 1038_ngsiv2_geo_location_entities/errors_geoline.test ........................................................  06 seconds
+0455/1159: 1038_ngsiv2_geo_location_entities/errors_geopoint.test .......................................................  05 seconds
+0456/1159: 1038_ngsiv2_geo_location_entities/errors_geopolygon.test .....................................................  06 seconds
+0457/1159: 1038_ngsiv2_geo_location_entities/geoquery_box_geobox.test ...................................................  05 seconds
+0458/1159: 1038_ngsiv2_geo_location_entities/geoquery_box_geobox_after_update.test ......................................  05 seconds
+0459/1159: 1038_ngsiv2_geo_location_entities/geoquery_box_geoline.test ..................................................  04 seconds
+0460/1159: 1038_ngsiv2_geo_location_entities/geoquery_box_geoline_after_update.test .....................................  05 seconds
+0461/1159: 1038_ngsiv2_geo_location_entities/geoquery_box_geopolygon.test ...............................................  05 seconds
+0462/1159: 1038_ngsiv2_geo_location_entities/geoquery_box_geopolygon_after_update.test ..................................  05 seconds
+0463/1159: 1038_ngsiv2_geo_location_entities/geoquery_circle_geopoint.test ..............................................  06 seconds
+0464/1159: 1038_ngsiv2_geo_location_entities/geoquery_circle_geopoint_after_update.test .................................  07 seconds
+0465/1159: 1038_ngsiv2_geo_location_entities/geoquery_polygon_geopoint.test .............................................  07 seconds
+0466/1159: 1038_ngsiv2_geo_location_entities/geoquery_polygon_geopoint_after_update.test ................................  08 seconds
+0467/1159: 1039_ngsiv2_date_support/basic_dates_support.test ............................................................  05 seconds
+0468/1159: 1039_ngsiv2_date_support/dates_in_q_uri_param.test ...........................................................  05 seconds
+0469/1159: 1039_ngsiv2_date_support/dates_in_q_uri_param_lists.test .....................................................  05 seconds
+0470/1159: 1039_ngsiv2_date_support/dates_in_q_uri_param_ranges.test ....................................................  04 seconds
+0471/1159: 1039_ngsiv2_date_support/dates_sub_filter_equal.test .........................................................  05 seconds
+0472/1159: 1039_ngsiv2_date_support/dates_sub_filter_greater_or_equal_than.test .........................................  06 seconds
+0473/1159: 1039_ngsiv2_date_support/dates_sub_filter_greater_than.test ..................................................  05 seconds
+0474/1159: 1039_ngsiv2_date_support/dates_sub_filter_inside_range.test ..................................................  05 seconds
+0475/1159: 1039_ngsiv2_date_support/dates_sub_filter_less_or_equal_than.test ............................................  06 seconds
+0476/1159: 1039_ngsiv2_date_support/dates_sub_filter_less_than.test .....................................................  05 seconds
+0477/1159: 1039_ngsiv2_date_support/dates_sub_filter_list.test ..........................................................  06 seconds
+0478/1159: 1039_ngsiv2_date_support/dates_sub_filter_not_equal.test .....................................................  05 seconds
+0479/1159: 1039_ngsiv2_date_support/dates_sub_filter_outside_range.test .................................................  05 seconds
+0480/1159: 1041_GET_v2_entities_options_count/get_entities_option_count.test ............................................  05 seconds
+0481/1159: 1048_subscription_cache/cache_population_at_init.test ........................................................  09 seconds
+0482/1159: 1048_subscription_cache/csub_update_with_notif.test ..........................................................  13 seconds
+0483/1159: 1048_subscription_cache/three_subscriptions.test .............................................................  09 seconds
+0484/1159: 1049_values_mode/attrs_order.test ............................................................................  04 seconds
+0485/1159: 1049_values_mode/values_mode.test ............................................................................  04 seconds
+0486/1159: 1049_values_mode/values_mode_entities.test ...................................................................  04 seconds
+0487/1159: 1050_options_unique/options_unique.test ......................................................................  04 seconds
+0488/1159: 1050_options_unique/validity_check_of_uri_param_options.test .................................................  05 seconds
+0489/1159: 1068_metadata_value_as_compound/metadata_value_as_compound_array.test ........................................  05 seconds
+0490/1159: 1068_metadata_value_as_compound/metadata_value_as_compound_complex.test ......................................  04 seconds
+0491/1159: 1068_metadata_value_as_compound/metadata_value_as_compound_object.test .......................................  04 seconds
+0492/1159: 1068_metadata_value_as_compound/metadata_value_as_compound_vector_with_objects.test ..........................  05 seconds
+0493/1159: 1068_metadata_value_as_compound/vector_compound_in_metadata_for_api_v1.test ..................................  04 seconds
+0494/1159: 1080_batch_query_context/batch_query_context_attributes.test .................................................  04 seconds
+0495/1159: 1080_batch_query_context/batch_query_context_entities.test ...................................................  05 seconds
+0496/1159: 1080_batch_query_context/batch_query_context_error_conditions.test ...........................................  06 seconds
+0497/1159: 1080_batch_query_context/batch_query_context_keyvalues.test ..................................................  05 seconds
+0498/1159: 1080_batch_query_context/batch_query_context_scopes.test .....................................................  04 seconds
+0499/1159: 1080_batch_query_context/batch_query_context_several_filters.test ............................................  05 seconds
+0500/1159: 1080_batch_query_context/batch_query_context_values.test .....................................................  04 seconds
+0501/1159: 1087_error_handling/error_messages_for_invalid_tenant_in_v2.test .............................................  04 seconds
+0502/1159: 1092_illegal_char_in_service_path/illegal_char_in_service_path.test ..........................................  04 seconds
+0503/1159: 1103_order_by/order_by_attribute.test ........................................................................  05 seconds
+0504/1159: 1103_order_by/order_by_attribute_batch.test ..................................................................  05 seconds
+0505/1159: 1103_order_by/order_by_attribute_ngsiv1.test .................................................................  05 seconds
+0506/1159: 1103_order_by/order_by_entity_dates.test .....................................................................  10 seconds
+0507/1159: 1103_order_by/order_by_proximity.test ........................................................................  04 seconds
+0508/1159: 1108_non_string_fields/non_string_fields.test ................................................................  05 seconds
+0509/1159: 1110_compound_metadata_error_handling/compound_metadata_error_handling.test ..................................  04 seconds
+0510/1159: 1112_metadata_as_keymap/metadata_with_dots_v1.test ...........................................................  04 seconds
+0511/1159: 1112_metadata_as_keymap/metadata_with_dots_v2.test ...........................................................  05 seconds
+0512/1159: 1113_bug_metadata_not_updated/metadata_not_updated.test ......................................................  04 seconds
+0513/1159: 1126_GET_v2_subscriptions/GET_v2_all_subs_pagination.test ....................................................  04 seconds
+0514/1159: 1126_GET_v2_subscriptions/GET_v2_all_subscriptions.test ......................................................  05 seconds
+0515/1159: 1126_GET_v2_subscriptions/lastsuccesscode_and_lastfailurereason.test .........................................  11 seconds
+0516/1159: 1126_GET_v2_subscriptions/sub_from_active_to_fail.test .......................................................  07 seconds
+0517/1159: 1126_GET_v2_subscriptions/sub_from_fail_to_active.test .......................................................  07 seconds
+0518/1159: 1127_v1_append_strict/v1_append_strict.test ..................................................................  05 seconds
+0519/1159: 1127_v1_replace/v1_replace.test ..............................................................................  04 seconds
+0520/1159: 1129_strings_in_q_uri_param/q_query_strings_for_subscriptions.test ...........................................  06 seconds
+0521/1159: 1129_strings_in_q_uri_param/strings_in_q_uri_param.test ......................................................  07 seconds
+0522/1159: 1142_updateContext_replace_geolocalization/replace_location_attribute_with_different_location_attribute.test .  04 seconds
+0523/1159: 1142_updateContext_replace_geolocalization/replace_location_attribute_with_no_location_attribute.test ........  04 seconds
+0524/1159: 1142_updateContext_replace_geolocalization/replace_location_attribute_with_same_location_attribute.test ......  04 seconds
+0525/1159: 1142_updateContext_replace_geolocalization/replace_no_location_attribute_with_location_attribute.test ........  05 seconds
+0526/1159: 1156_mq_as_uri_param_for_metadata/mq_and_spaces_in_metadata_value.test .......................................  04 seconds
+0527/1159: 1156_mq_as_uri_param_for_metadata/mq_as_scope_for_compound_values_in_v1_queries.test .........................  04 seconds
+0528/1159: 1156_mq_as_uri_param_for_metadata/mq_as_scope_for_compound_values_in_v2_batch_query.test .....................  05 seconds
+0529/1159: 1156_mq_as_uri_param_for_metadata/mq_as_scope_in_v1_queries.test .............................................  04 seconds
+0530/1159: 1156_mq_as_uri_param_for_metadata/mq_as_scope_in_v2_batch_query.test .........................................  05 seconds
+0531/1159: 1156_mq_as_uri_param_for_metadata/mq_as_uri_param_for_metadata.test ..........................................  07 seconds
+0532/1159: 1156_mq_as_uri_param_for_metadata/mq_as_uri_param_for_metadata_nocache.test ..................................  07 seconds
+0533/1159: 1156_mq_as_uri_param_for_metadata/q_and_mq_as_uri_param_for_metadata.test ....................................  07 seconds
+0534/1159: 1156_mq_as_uri_param_for_metadata/q_and_mq_false_and_true_is_false.test ......................................  04 seconds
+0535/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_deeper.test .............................................  08 seconds
+0536/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_equals_bool.test ........................................  05 seconds
+0537/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_equals_float.test .......................................  06 seconds
+0538/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_equals_integer.test .....................................  06 seconds
+0539/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_equals_null.test ........................................  04 seconds
+0540/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_equals_string.test ......................................  06 seconds
+0541/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_equals_subs.test ........................................  07 seconds
+0542/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_existence.test ..........................................  05 seconds
+0543/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_existence_subs.test .....................................  06 seconds
+0544/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_greater_than.test .......................................  07 seconds
+0545/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_less_than.test ..........................................  06 seconds
+0546/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_lt_le_gt_ge_subs.test ...................................  06 seconds
+0547/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_many_qfilter_items.test .................................  04 seconds
+0548/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_patternmatch_subs.test ..................................  07 seconds
+0549/1159: 1156_mqfilters_and_compounds/mqfilters_and_compounds_string_match.test .......................................  04 seconds
+0550/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_deeper.test ...............................................  08 seconds
+0551/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_equals_bool.test ..........................................  05 seconds
+0552/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_equals_float.test .........................................  06 seconds
+0553/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_equals_integer.test .......................................  06 seconds
+0554/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_equals_null.test ..........................................  04 seconds
+0555/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_equals_string.test ........................................  06 seconds
+0556/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_equals_subs.test ..........................................  07 seconds
+0557/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_existence.test ............................................  05 seconds
+0558/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_existence_subs.test .......................................  06 seconds
+0559/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_greater_than.test .........................................  07 seconds
+0560/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_less_than.test ............................................  06 seconds
+0561/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_lt_le_gt_ge_subs.test .....................................  06 seconds
+0562/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_many_qfilter_items.test ...................................  05 seconds
+0563/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_patternmatch_subs.test ....................................  06 seconds
+0564/1159: 1156_qfilters_and_compounds/qfilters_and_compounds_string_match.test .........................................  05 seconds
+0565/1159: 1158_v2_entity_already_exists/create_already_exists.test .....................................................  04 seconds
+0566/1159: 1164_v2_update_entities_attr_empty_value/update_entities_attr_empty_value.test ...............................  05 seconds
+0567/1159: 1169_uri_param_options_map/uri_param_options_map.test ........................................................  05 seconds
+0568/1159: 1170_get_types_values_option/get_types_values_option.test ....................................................  05 seconds
+0569/1159: 1170_get_types_values_option/get_types_values_option_with_empty_type_entities.test ...........................  05 seconds
+0570/1159: 1170_get_types_values_option/get_types_values_option_with_null_and_empty_types.test ..........................  05 seconds
+0571/1159: 1170_get_types_values_option/get_types_values_option_with_null_type_entities.test ............................  05 seconds
+0572/1159: 1172_bug_json_invalid_render/invalid_json_render.test ........................................................  05 seconds
+0573/1159: 1177_geometry_and_coords/geometry_and_coords.test ............................................................  06 seconds
+0574/1159: 1177_geometry_and_coords/geometry_and_coords_errors.test .....................................................  05 seconds
+0575/1159: 1179_options_test/GET_v2_ent_attr_val_accept_basic.test ......................................................  04 seconds
+0576/1159: 1179_options_test/GET_v2_ent_attr_val_options_text.test ......................................................  05 seconds
+0577/1159: 1185_udpate_change_value_type/update_change_value_type.test ..................................................  06 seconds
+0578/1159: 1187_empty_attribute_in_create/empty_attribute_in_create.test ................................................  04 seconds
+0579/1159: 1188_empty_attribute_value/empty_attribute_value.test ........................................................  05 seconds
+0580/1159: 1198_v2_update_entities_too_many_results/too_many_results.test ...............................................  05 seconds
+0581/1159: 1200_parse_error_in_description_string/parse_error_in_description_string.test ................................  05 seconds
+0582/1159: 1217_update_compound_with_dots/update_compound_with_dots.test ................................................  04 seconds
+0583/1159: 1257_v2_update_patch_without_payload/update_patch_without_payload.test .......................................  05 seconds
+0584/1159: 1259_new_json_for_v2/compound_attributes_with_value_field.test ...............................................  04 seconds
+0585/1159: 1259_new_json_for_v2/compound_with_null_value.test ...........................................................  05 seconds
+0586/1159: 1259_new_json_for_v2/get_attribute_value.test ................................................................  07 seconds
+0587/1159: 1259_new_json_for_v2/get_attribute_value_small.test ..........................................................  04 seconds
+0588/1159: 1259_new_json_for_v2/post_v2_entities_eid_with_keyvalues.test ................................................  06 seconds
+0589/1159: 1259_new_json_for_v2/post_v2_entities_with_keyvalues.test ....................................................  05 seconds
+0590/1159: 1259_new_json_for_v2/putPostPatch_v2_entities_eid.test .......................................................  04 seconds
+0591/1159: 1259_new_json_for_v2/putPostPatch_v2_entities_eid_with_error.test ............................................  06 seconds
+0592/1159: 1259_new_json_for_v2/put_attribute_value.test ................................................................  06 seconds
+0593/1159: 1259_new_json_for_v2/put_attribute_value_type_check.test .....................................................  05 seconds
+0594/1159: 1259_new_json_for_v2/put_v2_entities_eid_attrs_attr.test .....................................................  05 seconds
+0595/1159: 1259_new_json_for_v2/update_attribute_with_null_value.test ...................................................  06 seconds
+0596/1159: 1259_new_json_for_v2/v2_render_modes.test ....................................................................  05 seconds
+0597/1159: 1260_v2_update_patch_error_description/update_patch_error_description.test ...................................  05 seconds
+0598/1159: 1278_patch_unknown_attribute/patch_unknown_attribute.test ....................................................  05 seconds
+0599/1159: 1280_patch_erroneous_service_path/patch_erroneous_service_path.test ..........................................  05 seconds
+0600/1159: 1289_exceed_mongo_key_limit/exceed_mongo_key_limit.test ......................................................  05 seconds
+0601/1159: 1305_all_tests_empty_payload/all_tests_empty_payload.test ....................................................  06 seconds
+0602/1159: 1306_string2double/string2double_not_a_number.test ...........................................................  05 seconds
+0603/1159: 1308_subscription_cache/cache_reset_from_db.test .............................................................  17 seconds
+0604/1159: 1308_subscription_cache/subCacheMixedSubscriptionsWithUpdatesAndDeletes.test .................................  07 seconds
+0605/1159: 1308_subscription_cache/subCacheThrottlingAndExpiration.test .................................................  22 seconds
+0606/1159: 1308_subscription_cache/subCacheThrottlingAndExpirationAfterRefresh.test .....................................  30 seconds
+0607/1159: 1308_subscription_cache/subCacheThrottlingAndExpirationAfterSubUpdate.test ...................................  20 seconds
+0608/1159: 1308_subscription_cache/subCacheThrottlingAndExpirationAfterSubUpdateWhenSubExpired.test .....................  19 seconds
+0609/1159: 1308_subscription_cache/sub_expired_and_updated_then_cache_refresh.test ......................................  20 seconds
+0611/1159: 1316_create_subscription/cond_attrs_and_q.test ...............................................................  12 seconds
+0612/1159: 1316_create_subscription/post_subs_errors.test ...............................................................  05 seconds
+0613/1159: 1316_create_subscription/post_subs_expr_initial_notification.test ............................................  07 seconds
+0614/1159: 1316_create_subscription/post_subs_expr_q_combined.test ......................................................  06 seconds
+0615/1159: 1316_create_subscription/post_subs_expr_q_equal_enum_number.test .............................................  06 seconds
+0616/1159: 1316_create_subscription/post_subs_expr_q_equal_enum_string.test .............................................  06 seconds
+0617/1159: 1316_create_subscription/post_subs_expr_q_equal_single_number.test ...........................................  07 seconds
+0618/1159: 1316_create_subscription/post_subs_expr_q_equal_single_string.test ...........................................  06 seconds
+0619/1159: 1316_create_subscription/post_subs_expr_q_exist_attr.test ....................................................  06 seconds
+0620/1159: 1316_create_subscription/post_subs_expr_q_greater_or_equal_than.test .........................................  06 seconds
+0621/1159: 1316_create_subscription/post_subs_expr_q_greater_than.test ..................................................  06 seconds
+0622/1159: 1316_create_subscription/post_subs_expr_q_less_or_equal_than.test ............................................  07 seconds
+0623/1159: 1316_create_subscription/post_subs_expr_q_less_than.test .....................................................  06 seconds
+0624/1159: 1316_create_subscription/post_subs_expr_q_nocache.test .......................................................  07 seconds
+0625/1159: 1316_create_subscription/post_subs_expr_q_not_equal_enum_number.test .........................................  06 seconds
+0626/1159: 1316_create_subscription/post_subs_expr_q_not_equal_enum_string.test .........................................  06 seconds
+0627/1159: 1316_create_subscription/post_subs_expr_q_not_equal_single_number.test .......................................  07 seconds
+0628/1159: 1316_create_subscription/post_subs_expr_q_not_equal_single_string.test .......................................  06 seconds
+0629/1159: 1316_create_subscription/post_subs_expr_q_not_exist_attr.test ................................................  06 seconds
+0630/1159: 1316_create_subscription/post_subs_expr_q_not_range.test .....................................................  06 seconds
+0631/1159: 1316_create_subscription/post_subs_expr_q_quoted_enum.test ...................................................  07 seconds
+0632/1159: 1316_create_subscription/post_subs_expr_q_range.test .........................................................  06 seconds
+0633/1159: 1316_create_subscription/post_subscriptions.test .............................................................  06 seconds
+0634/1159: 1317_GET_v2_subscription/get_subscription.test ...............................................................  05 seconds
+0635/1159: 1320_v2_error_put_attributes/error_put_attributes.test .......................................................  05 seconds
+0636/1159: 1322_using_patt_conv_op/get_ce_type_id.test ..................................................................  05 seconds
+0637/1159: 1323_put_replacing_dot_in_attrnames/put_replacing_dot_in_attrnames.test ......................................  06 seconds
+0638/1159: 1328_pause_subscriptions/pause_subscriptions.test ............................................................  07 seconds
+0639/1159: 1328_pause_subscriptions/pause_subscriptions_errors.test .....................................................  05 seconds
+0640/1159: 1328_pause_subscriptions/pause_subscriptions_notif_cache.test ................................................  14 seconds
+0641/1159: 1328_pause_subscriptions/pause_subscriptions_notif_nocache.test ..............................................  07 seconds
+0642/1159: 1358_v1_empty_attribute_values/empty_attribute_values.test ...................................................  05 seconds
+0643/1159: 1358_v1_empty_attribute_values/empty_attribute_values_notification.test ......................................  07 seconds
+0644/1159: 1358_v1_empty_attribute_values/empty_values_conv_ops.test ....................................................  06 seconds
+0645/1159: 1360_error_response_for_entity_not_found/error_response_for_entity_not_found.test ............................  05 seconds
+0646/1159: 1367_time_measures/time_measure_stats.test ...................................................................  06 seconds
+0647/1159: 1387_update_two_entities/update_two_entities.test ............................................................  04 seconds
+0648/1159: 1392_empty_attr_conv_op/empty_attr_conv_op.test ..............................................................  05 seconds
+0649/1159: 1403_length_of_tenant/long_tenant_name.test ..................................................................  06 seconds
+0650/1159: 1423_get_v2_servicepath_long/get_long_servicepath.test .......................................................  05 seconds
+0651/1159: 1426_empty_components_in_uri_path/double_slash_at_end_of_path.test ...........................................  07 seconds
+0652/1159: 1426_empty_components_in_uri_path/empty_components_in_uri_path.test ..........................................  06 seconds
+0653/1159: 1433_update_metadata_duplicated/update_meta.test .............................................................  05 seconds
+0654/1159: 1440_cpr_update_compounds/cpr_update_compounds.test ..........................................................  10 seconds
+0655/1159: 1444_err_msg_duplicate_attr/create_entity_dup_attr.test ......................................................  05 seconds
+0656/1159: 1449_notification_mode_cases/onchange_persisent.test .........................................................  07 seconds
+0657/1159: 1449_notification_mode_cases/onchange_simulated.test .........................................................  06 seconds
+0658/1159: 1449_notification_mode_cases/onchange_threadpool.test ........................................................  07 seconds
+0659/1159: 1471_ngsiv1_render_not_string_in_compounds/ngsiv1_render_not_string_in_compounds.test ........................  05 seconds
+0660/1159: 1488_unsubscribe_sem_bug/unsubscribe_sem_bug.test ............................................................  05 seconds
+0661/1159: 1490_compound_values_with_dot_in_key/compound_values_with_dot_in_key.test ....................................  05 seconds
+0662/1159: 1552_invalid_sub_id/invalid_sub_id.test ......................................................................  05 seconds
+0663/1159: 1577_servicepath_get_subs/get_subs_with_servicepath.test .....................................................  06 seconds
+0664/1159: 1582_alarmManager/alarm_manager_bad_input.test ...............................................................  06 seconds
+0665/1159: 1582_alarmManager/alarm_manager_bad_input_v1.test ............................................................  05 seconds
+0666/1159: 1585_log_summary/log_summary.test ............................................................................  21 seconds
+0667/1159: 1589_query_entities_with_specific_attributes/query_entities_with_specific_attributes.test ....................  05 seconds
+0668/1159: 1592_query_with_q_op_greater_or_equal/attribute_exists_or_not.test ...........................................  05 seconds
+0669/1159: 1592_query_with_q_op_greater_or_equal/query_with_all_q_ops_without_right_hand_side.test ......................  06 seconds
+0670/1159: 1592_query_with_q_op_greater_or_equal/query_with_q_op_greater_or_equal.test ..................................  07 seconds
+0671/1159: 1592_query_with_q_op_greater_or_equal/query_with_q_op_less_or_equal.test .....................................  06 seconds
+0672/1159: 1594_query_with_q_and_equals_true/query_with_q_and_equals_true.test ..........................................  06 seconds
+0673/1159: 1595_query_with_q_and_string_values/query_with_q_and_string_values.test ......................................  06 seconds
+0674/1159: 1601_restrict_chars_in_ids/restrict_chars_attr.test ..........................................................  06 seconds
+0675/1159: 1601_restrict_chars_in_ids/restrict_chars_entity.test ........................................................  05 seconds
+0676/1159: 1601_restrict_chars_in_ids/restrict_chars_metadata.test ......................................................  06 seconds
+0677/1159: 1601_restrict_chars_in_ids/restrict_len_ids.test .............................................................  06 seconds
+0678/1159: 1607_query_with_q_and_ranges_but_invalid_operator/query_with_q_and_ranges_but_invalid_operator.test ..........  06 seconds
+0679/1159: 1642_empty_string_in_nested_object/empty_string_in_nested_object.test ........................................  06 seconds
+0680/1159: 1654_del_subs_v2/delete_subs_v2.test .........................................................................  05 seconds
+0681/1159: 1658_v2_patch_subscription/patch_subs_expr_initial_notification.test .........................................  07 seconds
+0682/1159: 1658_v2_patch_subscription/patch_subscriptions.test ..........................................................  06 seconds
+0683/1159: 1661_bad_input_on_notification_error/bad_input_on_notification_error.test ....................................  13 seconds
+0684/1159: 1661_bad_input_on_notification_error/bad_input_on_notification_error_api_v1.test .............................  14 seconds
+0685/1159: 1661_bad_input_on_notification_error/bad_input_on_notification_error_with_relogged_alarms.test ...............  13 seconds
+0686/1159: 1661_bad_input_on_notification_error/bad_input_on_notification_error_with_relogged_alarms_api_v1.test ........  13 seconds
+0687/1159: 1675_entity_with_plus_symbol/entity_with_plus_symbol.test ....................................................  05 seconds
+0688/1159: 1675_entity_with_plus_symbol/entity_with_plus_symbol_v2.test .................................................  06 seconds
+0689/1159: 1677_geo_location_for_api_v2/geo_location_for_api_v2_error_cases.test ........................................  07 seconds
+0690/1159: 1677_geo_location_for_api_v2/geoquery_points.test ............................................................  08 seconds
+0691/1159: 1677_geo_location_for_api_v2/ngsiv2_location_in_ngsv1.test ...................................................  07 seconds
+0692/1159: 1677_geo_location_for_api_v2/ngsiv2_location_in_ngsv1_near.test ..............................................  08 seconds
+0693/1159: 1678_geosubscriptions/geosubscriptions.test ..................................................................  07 seconds
+0694/1159: 1678_geosubscriptions/geosubscriptions_errors.test ...........................................................  06 seconds
+0695/1159: 1678_geosubscriptions/geosubscriptions_plus_q_filter.test ....................................................  07 seconds
+0696/1159: 1682_ngsiv2_entity_id/ngsiv2_entity_id_revisited.test ........................................................  06 seconds
+0697/1159: 1693_preserve_sp_updating_subscription/preserve_sp_updating_subscription_ngsiv1.test .........................  06 seconds
+0698/1159: 1693_preserve_sp_updating_subscription/preserve_sp_updating_subscription_ngsiv2.test .........................  06 seconds
+0699/1159: 1697_more_than_one_bad_input/more_than_one_bad_input.test ....................................................  08 seconds
+0700/1159: 1705_csub_cache_objects/csub_cache_objects_errors.test .......................................................  07 seconds
+0701/1159: 1705_csub_cache_objects/csub_cache_string_filter_update.test .................................................  07 seconds
+0702/1159: 1705_csub_cache_objects/syntax_check_for_q_uri_param.test ....................................................  06 seconds
+0703/1159: 1713_null_value_for_metadatas/null_value_for_metadatas.test ..................................................  05 seconds
+0704/1159: 1715_batch_update/batch_update_APPEND.test ...................................................................  06 seconds
+0705/1159: 1715_batch_update/batch_update_DELETE.test ...................................................................  05 seconds
+0706/1159: 1715_batch_update/batch_update_REPLACE.test ..................................................................  06 seconds
+0707/1159: 1715_batch_update/batch_update_UPDATE.test ...................................................................  06 seconds
+0708/1159: 1715_batch_update/batch_update_error_entity_not_found.test ...................................................  05 seconds
+0709/1159: 1715_batch_update/batch_update_errors.test ...................................................................  07 seconds
+0710/1159: 1715_batch_update/batch_update_many.test .....................................................................  06 seconds
+0711/1159: 1716_bug_in_v2_entities_without_options_key_values/bug_in_v2_entities_without_options_key_values.test ........  06 seconds
+0712/1159: 1720_get_entities_by_id/get_entities_by_id.test ..............................................................  05 seconds
+0713/1159: 1728_bug_forbidden_chars/forbidden_chars_entity.test .........................................................  06 seconds
+0714/1159: 1728_bug_forbidden_chars/restrict_chars_attr.test ............................................................  06 seconds
+0715/1159: 1728_bug_forbidden_chars/restrict_chars_metadata.test ........................................................  05 seconds
+0716/1159: 1749_list_of_types_in_query/list_of_types_in_query.test ......................................................  07 seconds
+0717/1159: 1764_long_servicepath_component/1764_long_servicepath_component.test .........................................  06 seconds
+0718/1159: 1782_forbidden_char_id_uri_patch/1782_forbidden_char_id_uri_patch.test .......................................  05 seconds
+0719/1159: 1784_patch_non_existing_attribute/patch_non_existing_attribute.test ..........................................  06 seconds
+0720/1159: 1785_error_on_empty_attr_type/error_on_empty_attr_type.test ..................................................  06 seconds
+0721/1159: 1789_patch_with_only_metadata/patch_with_only_metadata.test ..................................................  06 seconds
+0722/1159: 1793_forbidden_id_chars_in_uri/1793_forbidden_id_chars_in_uri.test ...........................................  06 seconds
+0723/1159: 1793_forbidden_id_chars_in_uri/1793_forbidden_id_chars_in_uri_attrs.test .....................................  06 seconds
+0724/1159: 1805_option_with_value_in_qs/1805_option_with_value_in_qs.test ...............................................  05 seconds
+0725/1159: 1830_default_type_none/create_with_default_type.test .........................................................  05 seconds
+0726/1159: 1830_default_type_none/ngsiv1_no_type_render_as_none.test ....................................................  06 seconds
+0727/1159: 1836_min_length_id_v2/1836_min_length_id_v2_attr.test ........................................................  06 seconds
+0728/1159: 1836_min_length_id_v2/1836_min_length_id_v2_entity.test ......................................................  06 seconds
+0729/1159: 1836_min_length_id_v2/1836_min_length_id_v2_metadata.test ....................................................  06 seconds
+0730/1159: 1847_invalid_chars_for_attribute_type/invalid_chars_for_attribute_type.test ..................................  06 seconds
+0731/1159: 1849_attribute_values_and_multiple_accept_types/attribute_values_and_multiple_accept_types_for_bool_attribute.  06 seconds
+0732/1159: 1849_attribute_values_and_multiple_accept_types/attribute_values_and_multiple_accept_types_for_null_attribute.  07 seconds
+0733/1159: 1849_attribute_values_and_multiple_accept_types/attribute_values_and_multiple_accept_types_for_number_attribut  06 seconds
+0734/1159: 1849_attribute_values_and_multiple_accept_types/attribute_values_and_multiple_accept_types_for_object_attribut  06 seconds
+0735/1159: 1849_attribute_values_and_multiple_accept_types/attribute_values_and_multiple_accept_types_for_string_attribut  07 seconds
+0736/1159: 1849_attribute_values_and_multiple_accept_types/attribute_values_and_multiple_accept_types_for_vector_attribut  06 seconds
+0737/1159: 1852_escaped_slashes_in_json_v1_payload/escaped_slashes_in_json_v1_payload.test ..............................  06 seconds
+0738/1159: 1853_typePattern_3a/get_v2_entities.test .....................................................................  06 seconds
+0739/1159: 1853_typePattern_3a/pattern_type_subscription.test ...........................................................  06 seconds
+0740/1159: 1853_typePattern_3a/subcache_typepattern.test ................................................................  11 seconds
+0741/1159: 1875_NGSIv2_notification_formats/NGSIv2_notification_formats.test ............................................  07 seconds
+0742/1159: 1875_NGSIv2_notification_formats/NGSIv2_notification_formats_order.test ......................................  07 seconds
+0743/1159: 1875_NGSIv2_notification_formats/NGSIv2_notification_formats_order_in_values.test ............................  07 seconds
+0744/1159: 1885_get_attr_value_date/1885_get_attr_value_date.test .......................................................  06 seconds
+0745/1159: 1887_bad_response/bad_response_in_GET_v2_entities_eid_EMPTY_attrs_attr_name_value.test .......................  06 seconds
+0746/1159: 1887_hash_in_url_gives_strange_results/hash_in_url_gives_strange_results.test ................................  06 seconds
+0747/1159: 1890_attribute_doesnt_exist_in_entity/attribute_doesnt_exist_in_entity.test ..................................  06 seconds
+0748/1159: 1898_no_multiservice_and_tenant_used/no_multiservice_and_tenant_used.test ....................................  07 seconds
+0749/1159: 1903_colon_as_double_equal_synonym/csub_filter_colon_as_enum.test ............................................  08 seconds
+0750/1159: 1903_colon_as_double_equal_synonym/csub_filter_colon_as_equal.test ...........................................  07 seconds
+0751/1159: 1903_colon_as_double_equal_synonym/csub_filter_colon_as_range.test ...........................................  08 seconds
+0752/1159: 1903_colon_as_double_equal_synonym/filter_query_colon.test ...................................................  06 seconds
+0753/1159: 1904_attr_value_type_none/1904_attr_value_type_none.test .....................................................  06 seconds
+0754/1159: 1905_put_attr_value_forbidden/1905_put_attr_value_forbidden.test .............................................  06 seconds
+0755/1159: 1909_response_on_entity_not_found_on_update_attr/response_on_entity_not_found_on_update_attr.test ............  06 seconds
+0756/1159: 1913_log_level_change_via_rest/log_level_change_via_rest.test ................................................  07 seconds
+0757/1159: 1916_fiware_correlator/fiware_correlator.test ................................................................  06 seconds
+0758/1159: 1916_fiware_correlator/fiware_correlator_forward_and_notifications.test ......................................  12 seconds
+0759/1159: 1918_csub_description_field/csub_description.test ............................................................  07 seconds
+0760/1159: 1920_geojson/entity_location_shapes_change_with_geojson.test .................................................  08 seconds
+0761/1159: 1920_geojson/errors_geojson.test .............................................................................  08 seconds
+0762/1159: 1920_geojson/geoquery_box_geojson.test .......................................................................  07 seconds
+0763/1159: 1920_geojson/geoquery_box_geojson_after_update.test ..........................................................  07 seconds
+0764/1159: 1939_v2_subs_created_without_id_not_idpattern/v2_subs_created_without_id_not_idpattern.test ..................  06 seconds
+0765/1159: 1945_filter_string_comparison/csub_filter_string_greater_or_equal_than.test ..................................  08 seconds
+0766/1159: 1945_filter_string_comparison/csub_filter_string_greater_than.test ...........................................  07 seconds
+0767/1159: 1945_filter_string_comparison/csub_filter_string_inside_range.test ...........................................  08 seconds
+0768/1159: 1945_filter_string_comparison/csub_filter_string_less_or_equal_than.test .....................................  08 seconds
+0769/1159: 1945_filter_string_comparison/csub_filter_string_less_than.test ..............................................  07 seconds
+0770/1159: 1945_filter_string_comparison/csub_filter_string_outside_range.test ..........................................  08 seconds
+0771/1159: 1945_filter_string_comparison/filter_string_comparison.test ..................................................  07 seconds
+0772/1159: 1947_1972_invalid_subs_crash/1947_1972_invalid_subs_crash.test ...............................................  07 seconds
+0773/1159: 1949_permanent_subscriptions/1949_permanent_get.test .........................................................  06 seconds
+0774/1159: 1949_permanent_subscriptions/1949_permanent_subscriptions.test ...............................................  08 seconds
+0775/1159: 1952_sub_notification_wo_attrs/1952_sub_notification_wo_attrs.test ...........................................  06 seconds
+0776/1159: 1956_bug_cross_sp_update/bug_cross_sp_update.test ............................................................  06 seconds
+0777/1159: 1960_failure_stats_in_db_and_notifications/failure_stats_in_db_and_notifications.test ........................  22 seconds
+0778/1159: 1960_failure_stats_in_db_and_notifications/failure_stats_in_db_and_notifications_stop_start_accumulator.test .  20 seconds
+0779/1159: 1964_not_ascii_type_subs/1964_not_ascii_type_subs.test .......................................................  07 seconds
+0780/1159: 1965_max_len_type_subs/1965_max_len_type_subs.test ...........................................................  06 seconds
+0781/1159: 1967_invalid_chars_type_subs/1967_invalid_chars_type_subs.test ...............................................  06 seconds
+0782/1159: 1985_empty_entity_type/empty_entity_type_in_subscription.test ................................................  06 seconds
+0783/1159: 1994_invalid_chars_in_q_at_sub_creation/invalid_chars_in_q_at_sub_creation.test ..............................  07 seconds
+0784/1159: 2009_check_of_notification_http_url_in_post_v2_subscriptions/check_of_notification_http_url_in_post_v2_subscri  07 seconds
+0785/1159: 2015_notification_templates/custom_qs_and_headers_names.test .................................................  07 seconds
+0786/1159: 2015_notification_templates/notification_templates.test ......................................................  09 seconds
+0787/1159: 2015_notification_templates/notification_templates_cache_refresh.test ........................................  09 seconds
+0788/1159: 2015_notification_templates/notification_templates_error_handling.test .......................................  07 seconds
+0789/1159: 2015_notification_templates/notification_templates_many_notifications.test ...................................  08 seconds
+0790/1159: 2015_notification_templates/notification_templates_many_notifications_after_update.test ......................  08 seconds
+0791/1159: 2015_notification_templates/notification_templates_many_queue_statistics.test ................................  08 seconds
+0792/1159: 2015_notification_templates/notification_templates_payload_as_xml.test .......................................  08 seconds
+0793/1159: 2015_notification_templates/notification_templates_with_decoded_chars_in_notifications.test ..................  08 seconds
+0794/1159: 2028_v2_add_attrs_resource/2028_invalid_method_del.test ......................................................  06 seconds
+0795/1159: 2028_v2_add_attrs_resource/2028_v2_add_attrs_resource.test ...................................................  06 seconds
+0796/1159: 2030_set_throttling_to_zero/set_throttling_to_zero.test ......................................................  07 seconds
+0797/1159: 2057_uri_path_case_sensitive_for_v2/uri_path_case_sensitive_for_v2.test ......................................  07 seconds
+0798/1159: 2058_wrong_number_rendering/ilegal_json_attributeformat_object_with_number.test ..............................  06 seconds
+0799/1159: 2064_attrs_blacklist_subs/2064_attrs_blacklist_complex.test ..................................................  13 seconds
+0800/1159: 2064_attrs_blacklist_subs/blacklist_after_sub_up.test ........................................................  08 seconds
+0801/1159: 2064_attrs_blacklist_subs/whitelist_after_sub_up.test ........................................................  07 seconds
+0802/1159: 2073_uri_param_to_disable_type_detail/uri_param_to_disable_type_detail.test ..................................  07 seconds
+0803/1159: 2075_no_payload_in_error_response/no_payload_in_error_response.test ..........................................  07 seconds
+0804/1159: 2086_allow_trailing_semicolon/allow_trailing_semicolon.test ..................................................  06 seconds
+0805/1159: 2092_incorrect_url_bug/check_incorrect_urls.test .............................................................  07 seconds
+0806/1159: 2106_wrong_text_payload_string_filter_subscription_error/wrong_text_payload_string_filter_subscription_error.t  06 seconds
+0807/1159: 2114_throttling_in_v2_subs/throttling_in_v2_subs.test ........................................................  08 seconds
+0808/1159: 2115_wrong_count_no_entity_types/wrong_count_no_entity_types.test ............................................  07 seconds
+0809/1159: 2128_content_type_without_payload/content_type_without_payload.test ..........................................  06 seconds
+0810/1159: 2135_disable_custom_notifications_cli/disble_custom_notifications_cli.test ...................................  09 seconds
+0811/1159: 2145_sem_status_operation/get_admin_sem_request.test .........................................................  06 seconds
+0812/1159: 2163_bug_attrs_format_not_stored/bug_attrs_format_not_stored.test ............................................  07 seconds
+0813/1159: 2164_regex_filter_crash/regex_filter_crash.test ..............................................................  07 seconds
+0814/1159: 2174_incorrect_error_response_when_running_invalid_query/incorrect_error_response_when_running_invalid_query.t  06 seconds
+0815/1159: 2176_not_print_spurious_decimals/not_print_spurious_decimals.test ............................................  07 seconds
+0816/1159: 2176_not_print_spurious_decimals/one_to_nine_decimals.test ...................................................  07 seconds
+0817/1159: 2184_empty_entity_id_at_sub_creation/empty_entity_id_at_sub_creation.test ....................................  07 seconds
+0818/1159: 2193_entity_not_found_when_forwarding/entity_not_found_when_forwarding_all_attrs.test ........................  12 seconds
+0819/1159: 2193_entity_not_found_when_forwarding/entity_not_found_when_forwarding_specific_attr.test ....................  13 seconds
+0820/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_GET_v2_entities.test ............................  13 seconds
+0821/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_GET_v2_entities_EID.test ........................  13 seconds
+0822/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_GET_v2_entities_EID_attrs.test ..................  13 seconds
+0823/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_GET_v2_entities_EID_attrs_ATTRNAME.test .........  14 seconds
+0824/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_GET_v2_entities_EID_attrs_ATTRNAME_value.test ...  13 seconds
+0825/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_PATCH_v2_entities_EID_attrs.test ................  13 seconds
+0826/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_POST_v2_op_update.test ..........................  13 seconds
+0827/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/forward_using_PUT_v2_entities_EID_attrs_ATTRNAME.test .........  13 seconds
+0828/1159: 2193_v1_reply_to_v2_response_on_error_with_cpr/v1_reply_to_v2_response_on_error_with_cpr.test ................  13 seconds
+0829/1159: 2203_http_info_for_sub_update/http_info_for_sub_update.test ..................................................  09 seconds
+0830/1159: 2207_not_spurious_decimals_in_custom_notifications/not_spurious_decimals_in_custom_notifications.test ........  08 seconds
+0831/1159: 2220_entity_not_found/entity_not_found.test ..................................................................  06 seconds
+0832/1159: 2221_invalid_error_updating_non_existing_attribute/invalid_error_updating_non_existing_attribute.test ........  06 seconds
+0833/1159: 2222_notif_not_sent_on_true/notif_not_sent_on_true.test ......................................................  08 seconds
+0834/1159: 2223_default_types_schema_org/default_metadata_types_schema_org.test .........................................  08 seconds
+0835/1159: 2223_default_types_schema_org/default_types_schema_org.test ..................................................  08 seconds
+0836/1159: 2226_pattern_matching_and_integers/pattern_matching_and_integers.test ........................................  07 seconds
+0837/1159: 2237_compound_values_in_forwarded_messages/compound_values_in_forwarded_messages.test ........................  14 seconds
+0838/1159: 2237_compound_values_in_forwarded_messages/compound_values_in_forwarded_messages_exactly_as_issue.test .......  08 seconds
+0839/1159: 2241_fix_attrs_filter/fix_attrs_filter.test ..................................................................  07 seconds
+0840/1159: 2246_attr_type_change_in_local/attr_type_change_in_local.test ................................................  08 seconds
+0841/1159: 2248_forwarding_updates_overwrite_the_types_of_attributes/attribute_type_converted_to_string_on_forward.test .  08 seconds
+0842/1159: 2248_forwarding_updates_overwrite_the_types_of_attributes/forwarding_updates_overwrite_the_types_of_attributes  14 seconds
+0843/1159: 2257_crash_with_invalid_subscription_when_matching/crash_with_invalid_subscription_when_matching.test ........  07 seconds
+0844/1159: 2279_empty_url_in_custom_sub_creation/empty_url_in_custom_sub_creation.test ..................................  06 seconds
+0845/1159: 2280_custom_url_validity_check/custom_url_validity_check.test ................................................  07 seconds
+0846/1159: 2280_custom_url_validity_check/invalid_hostname_detection.test ...............................................  08 seconds
+0847/1159: 2303_subs_with_invalid_expires_dates/subs_with_invalid_expires_dates.test ....................................  07 seconds
+0848/1159: 2332_patterns_in_registrations/patterns_in_registrations.test ................................................  07 seconds
+0849/1159: 2339_json_native_types_in_v1/json_native_types_in_v1.test ....................................................  09 seconds
+0850/1159: 2352_get_log_level/get_log_level.test ........................................................................  07 seconds
+0851/1159: 2359_null_values_in_string_filters/null_values_in_string_filters.test ........................................  08 seconds
+0852/1159: 2360_cpr_invalid_response/cpr_invalid_response.test ..........................................................  09 seconds
+0853/1159: 2383_round_number_to_nine_digits/round_number_to_nine_digits.test ............................................  07 seconds
+0854/1159: 2386_missing_citation_mark_error/missing_citation_mark_error.test ............................................  07 seconds
+0855/1159: 2394_inconsistent_mdnames_after_update/inconsistent_mdnames_after_update.test ................................  08 seconds
+0856/1159: 2419_log_level/log_level.test ................................................................................  08 seconds
+0857/1159: 2420_logLevel_error_message/logLevel_error_message.test ......................................................  07 seconds
+0858/1159: 2443_mq_date_processing/mq_date_processing.test ..............................................................  08 seconds
+0859/1159: 2445_mq_date_processing_subs/mq_date_processing_subs.test ....................................................  08 seconds
+0860/1159: 2446_mq_and_vector/mq_and_vector.test ........................................................................  08 seconds
+0861/1159: 2452_q_for_attr_with_colon_in_name/q_for_attr_with_colon_in_name.test ........................................  08 seconds
+0862/1159: 2453_attrs_with_double_underscore/attrs_with_double_underscore.test ..........................................  07 seconds
+0863/1159: 2457_json_tags_with_same_name/json_tags_with_same_name.test ..................................................  08 seconds
+0864/1159: 2490_query_url_regex_with_slash/query_url_regex_with_slash.test ..............................................  08 seconds
+0865/1159: 2494_query_payload_regex_with_slash/query_payload_regex_with_slash.test ......................................  07 seconds
+0866/1159: 2495_typepattern_on_sub_update/typepattern_on_sub_update.test ................................................  08 seconds
+0867/1159: 2496_mq_metadata_not_exist/mq_metadata_not_exist.test ........................................................  07 seconds
+0868/1159: 2506_fix_precission_lost_large_integers/fix_precission_lost_large_integers.test ..............................  08 seconds
+0869/1159: 2507_csub_metadata_field/create_and_update_csubs_with_metadata_field.test ....................................  08 seconds
+0870/1159: 2507_csub_metadata_field/metadata_filter.test ................................................................  09 seconds
+0871/1159: 2507_csub_metadata_field/metadata_filter_existing_sub.test ...................................................  09 seconds
+0872/1159: 2507_csub_metadata_field/previous_value_with_compounds.test ..................................................  09 seconds
+0873/1159: 2507_csub_metadata_field/previous_value_with_compounds_ngsiv1.test ...........................................  09 seconds
+0874/1159: 2507_csub_metadata_field/special_metadata_in_notifications.test ..............................................  10 seconds
+0875/1159: 2507_csub_metadata_field/special_metadata_in_notifications_ngsiv1.test .......................................  09 seconds
+0876/1159: 2527_crash_with_empty_uri_path/crash_with_empty_uri_path.test ................................................  07 seconds
+0877/1159: 2544_metadata_filtering_in_retrieve_operations/metadata_filtering_in_retrieve_operations.test ................  09 seconds
+0878/1159: 2549_append_or_update_in_actionType_in_notifications/append_or_update_in_actionType_in_notifications.test ....  09 seconds
+0879/1159: 2553_wrong_metadata_type_in_prev_value_in_notification/wrong_metadata_type_in_prev_value_in_notification.test   09 seconds
+0880/1159: 2584_service_path_header_in_notifs/service_path_header_in_notifs.test ........................................  09 seconds
+0881/1159: 2587_attr_update_to_null/attr_update_to_no_value.test ........................................................  08 seconds
+0882/1159: 2587_attr_update_to_null/attr_update_to_null.test ............................................................  08 seconds
+0883/1159: 2588_missing_prevval_on_changed_type/2588_missing_prevval_on_changed_type.test ...............................  09 seconds
+0884/1159: 2596_retrieve_entity_without_attrs/retrieve_entity_without_attrs.test ........................................  07 seconds
+0885/1159: 2603_large_int_rendering/large_int_rendering.test ............................................................  08 seconds
+0886/1159: 2604_op_query_attrs/op_query_attrs.test ......................................................................  08 seconds
+0887/1159: 2604_op_query_attrs/op_query_builtin_attrs.test ..............................................................  08 seconds
+0888/1159: 2631_partial_datetimes/partial_datetime_creation.test ........................................................  08 seconds
+0889/1159: 2631_partial_datetimes/partial_datetime_filter.test ..........................................................  08 seconds
+0890/1159: 2632_timezones/timezones.test ................................................................................  07 seconds
+0891/1159: 2632_timezones/timezones_filters.test ........................................................................  10 seconds
+0892/1159: 2647_patch_subscription_bugfix/patch_subscription_bugfix_to_attrs.test .......................................  08 seconds
+0893/1159: 2647_patch_subscription_bugfix/patch_subscription_bugfix_to_except_attr.test .................................  07 seconds
+0894/1159: 2653_bugfix_op_update_wrong_actiontype/bugfix_op_update_wrong_actiontype.test ................................  08 seconds
+0895/1159: 2654_iso8601_as_alias_for_DateTime/basic_dates_support_for_iso8601.test ......................................  08 seconds
+0896/1159: 2654_iso8601_as_alias_for_DateTime/dates_sub_filter_equal_for_ISO8601.test ...................................  10 seconds
+0897/1159: 2658_bugfix_op_update_id_not_plain_ascii/bugfix_op_update_id_not_plain_ascii.test ............................  08 seconds
+0898/1159: 2659_bugfix_op_update_id_min_max_length/bugfix_op_update_id_min_max_length.test ..............................  07 seconds
+0899/1159: 2661_bugfix_op_update_id_forbidden_chars/bugfix_op_update_id_forbidden_chars.test ............................  08 seconds
+0900/1159: 2664_bugfix_op_update_type_not_plain_ascii/bugfix_op_update_type_not_plain_ascii.test ........................  08 seconds
+0901/1159: 2665_bugfix_op_update_type_min_max_length/bugfix_op_update_type_min_max_length.test ..........................  08 seconds
+0902/1159: 2666_bugfix_op_update_type_forbidden_chars/bugfix_op_update_type_forbidden_chars.test ........................  08 seconds
+0903/1159: 2670_milliseconds_for_DateTime_attrs/2670_milliseconds_filter_query.test .....................................  08 seconds
+0904/1159: 2670_milliseconds_for_DateTime_attrs/2670_milliseconds_filter_sub.test .......................................  10 seconds
+0905/1159: 2670_milliseconds_for_DateTime_attrs/2670_milliseconds_for_DateTime_attrs.test ...............................  09 seconds
+0906/1159: 2673_bugfix_op_update_attr_name_checks/bugfix_op_update_attr_name_checks.test ................................  08 seconds
+0907/1159: 2674_bugfix_op_update_attr_type_checks/bugfix_op_update_attr_type_checks.test ................................  08 seconds
+0908/1159: 2675_bugfix_op_update_md_name_checks/bugfix_op_update_md_name_checks.test ....................................  08 seconds
+0909/1159: 2676_bugfix_op_update_md_type_checks/bugfix_op_update_md_type_checks.test ....................................  08 seconds
+0910/1159: 2681_bugfix_op_update_attr_value_checks/bugfix_op_update_attr_value_checks.test ..............................  08 seconds
+0911/1159: 2682_bugfix_op_update_md_value_checks/bugfix_op_update_md_value_checks.test ..................................  08 seconds
+0912/1159: 2685_batch_op_empty_type/2685_batch_op_empty_type.test .......................................................  08 seconds
+0913/1159: 2706_op_query_expressions/op_query_expressions.test ..........................................................  09 seconds
+0914/1159: 2720_op_update_crash/op_update_crash.test ....................................................................  08 seconds
+0915/1159: 2723_entity_type_wrongly_as_pattern/enity_type_wrongly_as_pattern.test .......................................  08 seconds
+0916/1159: 2750_common_metrics/2750_complex_service_path.test ...........................................................  08 seconds
+0917/1159: 2750_common_metrics/2750_forwards.test .......................................................................  17 seconds
+0918/1159: 2750_common_metrics/2750_incomingTransactions.test ...........................................................  09 seconds
+0919/1159: 2750_common_metrics/2750_incoming_errors.test ................................................................  10 seconds
+0920/1159: 2750_common_metrics/2750_metrics_off.test ....................................................................  08 seconds
+0921/1159: 2750_common_metrics/2750_notifications.test ..................................................................  10 seconds
+0922/1159: 2750_common_metrics/2750_reset_metrics.test ..................................................................  09 seconds
+0923/1159: 2750_common_metrics/2750_sum_for_same_service_path_different_tenant.test .....................................  09 seconds
+0924/1159: 2750_common_metrics/2750_totalPayloadAsMetric.test ...........................................................  09 seconds
+0925/1159: 2761_no_response_if_not_all_payload_is_read/no_response_if_not_all_payload_is_read.test ......................  08 seconds
+0926/1159: 2763_postUpdateContext_error_return/invalid_service_path_gives_400_bad_request.test ..........................  08 seconds
+0927/1159: 2763_postUpdateContext_error_return/postEntities_with_errors_in_service_path.test ............................  09 seconds
+0928/1159: 2770_v1_append_not_updates_geo_point/v1_append_not_updates_geo_point.test ....................................  08 seconds
+0929/1159: 2772_empty_component_in_service_path/empty_component_in_service_path.test ....................................  08 seconds
+0930/1159: 2805_quotes_in_lhs_of_string_filter/quotes_in_lhs_compound_of_string_filter.test .............................  11 seconds
+0931/1159: 2805_quotes_in_lhs_of_string_filter/quotes_in_lhs_of_string_filter.test ......................................  09 seconds
+0932/1159: 2807_quotes_to_stringify_in_string_filter/quotes_to_stringify_in_string_filter.test ..........................  09 seconds
+0933/1159: 2811_long_service_names_in_subscriptions/long_service_names_in_subscriptions.test ............................  12 seconds
+0934/1159: 2819_forbiddenChars_in_batch-query_and_NOT_in_URI_param_typePattern/forbiddenChars_in_batch-query_and_NOT_in_U  09 seconds
+0935/1159: 2846_empty_maps_in_metrics/empty_maps_in_metrics.test ........................................................  08 seconds
+0936/1159: 2871_fwd_update_ok_but_not_found_response/fwd_update_ok_but_not_found_response.test ..........................  11 seconds
+0937/1159: 2893_case_insensitive_custom_notif_http_headers/case_insensitive_custom_notif_http_headers.test ..............  09 seconds
+0938/1159: 2893_case_insensitive_custom_notif_http_headers/case_insensitive_custom_notif_http_headers_with_text_plain.tes  10 seconds
+0939/1159: 2934_order_by_id_and_type/order_by_id_and_type.test ..........................................................  08 seconds
+0940/1159: 2934_order_by_id_and_type/order_by_id_and_type_combined.test .................................................  09 seconds
+0941/1159: 2937_self_notification_protection/nonmodifiable_headers.test .................................................  10 seconds
+0942/1159: 2937_self_notification_protection/self_notification_multi_hop.test ...........................................  30 seconds
+0943/1159: 2937_self_notification_protection/self_notification_one_hop.test .............................................  14 seconds
+0944/1159: 2948_wrong_max_one_service_path_response/wrong_max_one_service_path_response.test ............................  09 seconds
+0945/1159: 2955_quote_in_url_not_escaped/quote_in_url_not_escaped.test ..................................................  08 seconds
+0946/1159: 2986_apiv2_notifications/apiv2_notification_all_json_types.test ..............................................  16 seconds
+0947/1159: 2986_apiv2_notifications/apiv2_notification_common_geo_json_types.test .......................................  17 seconds
+0948/1159: 2986_apiv2_notifications/apiv2_notification_reception.test ...................................................  25 seconds
+0949/1159: 2991_invalid_description_query_error_response/invalid_description_query_error_response.test ..................  09 seconds
+0950/1159: 2995_q_in_GET/mq_compound_does-not-exist_GET_GTE.test ........................................................  09 seconds
+0951/1159: 2995_q_in_GET/mq_compound_does-not-exist_GET_LTE.test ........................................................  08 seconds
+0952/1159: 2995_q_in_GET/mq_compound_incompatible-type_GET_GTE.test .....................................................  09 seconds
+0953/1159: 2995_q_in_GET/mq_compound_incompatible-type_GET_LTE.test .....................................................  09 seconds
+0954/1159: 2995_q_in_GET/mq_value_does-not-exist_GET_GTE.test ...........................................................  08 seconds
+0955/1159: 2995_q_in_GET/mq_value_does-not-exist_GET_LTE.test ...........................................................  09 seconds
+0956/1159: 2995_q_in_GET/mq_value_incompatible-type_GET_GTE.test ........................................................  08 seconds
+0957/1159: 2995_q_in_GET/mq_value_incompatible-type_GET_LTE.test ........................................................  08 seconds
+0958/1159: 2995_q_in_GET/q_compound_does-not-exist_GET_GTE.test .........................................................  09 seconds
+0959/1159: 2995_q_in_GET/q_compound_does-not-exist_GET_LTE.test .........................................................  09 seconds
+0960/1159: 2995_q_in_GET/q_compound_incompatible-type_GET_GTE.test ......................................................  08 seconds
+0961/1159: 2995_q_in_GET/q_compound_incompatible-type_GET_LTE.test ......................................................  09 seconds
+0962/1159: 2995_q_in_GET/q_value_does-not-exist_GET_GTE.test ............................................................  09 seconds
+0963/1159: 2995_q_in_GET/q_value_does-not-exist_GET_LTE.test ............................................................  09 seconds
+0964/1159: 2995_q_in_GET/q_value_incompatible-type_GET_GTE.test .........................................................  08 seconds
+0965/1159: 2995_q_in_GET/q_value_incompatible-type_GET_LTE.test .........................................................  09 seconds
+0966/1159: 2995_q_in_subscriptions/mq_compound_does-not-exist_sub_GTE.test ..............................................  10 seconds
+0967/1159: 2995_q_in_subscriptions/mq_compound_does-not-exist_sub_LTE.test ..............................................  10 seconds
+0968/1159: 2995_q_in_subscriptions/mq_compound_non-compatible-type_sub_GTE.test .........................................  10 seconds
+0969/1159: 2995_q_in_subscriptions/mq_compound_non-compatible-type_sub_LTE.test .........................................  10 seconds
+0970/1159: 2995_q_in_subscriptions/mq_value_does-not-exist_sub_GTE.test .................................................  10 seconds
+0971/1159: 2995_q_in_subscriptions/mq_value_does-not-exist_sub_LTE.test .................................................  11 seconds
+0972/1159: 2995_q_in_subscriptions/mq_value_non-compatible_sub_GTE.test .................................................  10 seconds
+0973/1159: 2995_q_in_subscriptions/mq_value_non-compatible_sub_LTE.test .................................................  10 seconds
+0974/1159: 2995_q_in_subscriptions/q_compound_does-not-exist_sub_GTE.test ...............................................  10 seconds
+0975/1159: 2995_q_in_subscriptions/q_compound_does-not-exist_sub_LTE.test ...............................................  10 seconds
+0976/1159: 2995_q_in_subscriptions/q_compound_non-compatible-type_sub_GTE.test ..........................................  10 seconds
+0977/1159: 2995_q_in_subscriptions/q_compound_non-compatible-type_sub_LTE.test ..........................................  10 seconds
+0978/1159: 2995_q_in_subscriptions/q_value_does-not-exist_sub_GTE.test ..................................................  10 seconds
+0979/1159: 2995_q_in_subscriptions/q_value_does-not-exist_sub_LTE.test ..................................................  11 seconds
+0980/1159: 2995_q_in_subscriptions/q_value_non-compatible_sub_GTE.test ..................................................  10 seconds
+0981/1159: 2995_q_in_subscriptions/q_value_non-compatible_sub_LTE.test ..................................................  10 seconds
+0982/1159: 2998_null_not_working_in_q_and_mq_filter/null_not_working_in_mq_for_subscription.test ........................  10 seconds
+0983/1159: 2998_null_not_working_in_q_and_mq_filter/null_not_working_in_q_for_subscription.test .........................  11 seconds
+0984/1159: 3000_allow_creation_transient_entities/create_transient_entity.test ..........................................  69 seconds
+0985/1159: 3000_allow_creation_transient_entities/failing_create_transient_entity_with_invalid_date.test ................  09 seconds
+0986/1159: 3000_allow_creation_transient_entities/failing_create_transient_entity_with_invalid_date_type.test ...........  08 seconds
+0987/1159: 3000_allow_creation_transient_entities/filter_by_date_expires.test ...........................................  09 seconds
+0988/1159: 3000_allow_creation_transient_entities/filtering_in_out_date_expires.test ....................................  10 seconds
+0989/1159: 3000_allow_creation_transient_entities/filtering_in_out_date_expires_in_notifications.test ...................  11 seconds
+0990/1159: 3000_allow_creation_transient_entities/replace_to_regular_entity.test ........................................  09 seconds
+0991/1159: 3000_allow_creation_transient_entities/replace_to_transient_entity.test ......................................  69 seconds
+0992/1159: 3000_allow_creation_transient_entities/update_to_regular_entity.test .........................................  69 seconds
+0993/1159: 3000_allow_creation_transient_entities/update_to_transient_entity.test .......................................  69 seconds
+0994/1159: 3004_v2_reg_create/v2_reg_create.test ........................................................................  09 seconds
+0995/1159: 3004_v2_reg_create/v2_reg_create_errors.test .................................................................  13 seconds
+0996/1159: 3004_v2_reg_create/v2_reg_create_v1_forward.test .............................................................  19 seconds
+0997/1159: 3005_GET_registrations/get_registrations.test ................................................................  09 seconds
+0998/1159: 3005_GET_registrations/get_registrations_with_pagination.test ................................................  10 seconds
+0999/1159: 3006_delete_registrations/delete_reg_using_v2_created_using_v2.test ..........................................  09 seconds
+1000/1159: 3008_get_registration/get_reg_using_v2_created_using_v2.test .................................................  09 seconds
+1001/1159: 3045_wrong_inclusion_location_metadata_notification/wrong_inclusion_location_metadata_V1.test ................  11 seconds
+1002/1159: 3045_wrong_inclusion_location_metadata_notification/wrong_inclusion_location_metadata_V2.test ................  10 seconds
+1003/1159: 3055_qc_inappropriate_payload/qc_inappropriate_payload.test ..................................................  09 seconds
+1004/1159: 3068_cprs_full_functional/fwd_v2_query_double_forward.test ...................................................  26 seconds
+1005/1159: 3068_cprs_full_functional/fwd_v2_query_false_registration.test ...............................................  17 seconds
+1006/1159: 3068_cprs_full_functional/fwd_v2_query_false_registration_and_one_more_value.test ............................  18 seconds
+1007/1159: 3068_cprs_full_functional/fwd_v2_query_false_registration_and_one_more_value_in_provider.test ................  26 seconds
+1008/1159: 3068_cprs_full_functional/fwd_v2_query_five_different_cprs_in_one_query.test .................................  52 seconds
+1009/1159: 3068_cprs_full_functional/fwd_v2_query_forward_depends_on_attr_field.test ....................................  34 seconds
+1010/1159: 3068_cprs_full_functional/fwd_v2_query_forward_query_not_found.test ..........................................  18 seconds
+1011/1159: 3068_cprs_full_functional/fwd_v2_query_found_and_not_found_locally_and_remote.test ...........................  36 seconds
+1012/1159: 3068_cprs_full_functional/fwd_v2_query_no_attributes_in_query_results_from_CB_and_CP1.test ...................  18 seconds
+1013/1159: 3068_cprs_full_functional/fwd_v2_query_no_attributes_in_query_results_from_CP1_and_CP2.test ..................  27 seconds
+1014/1159: 3068_cprs_full_functional/fwd_v2_query_one_forward.test ......................................................  17 seconds
+1015/1159: 3068_cprs_full_functional/fwd_v2_query_shadowed_attribute.test ...............................................  18 seconds
+1016/1159: 3068_cprs_full_functional/fwd_v2_query_two_attributes_in_cpr_one_local.test ..................................  28 seconds
+1017/1159: 3068_cprs_full_functional/fwd_v2_query_two_attributes_in_one_cpr_three_in_another.test .......................  27 seconds
+1018/1159: 3068_cprs_full_functional/fwd_v2_query_with_contextElement_providingApplicationList.test .....................  36 seconds
+1019/1159: 3068_cprs_full_functional/fwd_v2_update_double_forward.test ..................................................  27 seconds
+1020/1159: 3068_cprs_full_functional/fwd_v2_update_false_registration.test ..............................................  18 seconds
+1021/1159: 3068_cprs_full_functional/fwd_v2_update_false_registration_and_one_more_value.test ...........................  18 seconds
+1022/1159: 3068_cprs_full_functional/fwd_v2_update_false_registration_and_one_more_value_in_provider.test ...............  27 seconds
+1023/1159: 3068_cprs_full_functional/fwd_v2_update_five_different_cprs_in_one_query.test ................................  54 seconds
+1024/1159: 3068_cprs_full_functional/fwd_v2_update_forward_depends_on_attr_field.test ...................................  37 seconds
+1025/1159: 3068_cprs_full_functional/fwd_v2_update_found_and_not_found_in_local_and_three_cprs.test .....................  36 seconds
+1026/1159: 3068_cprs_full_functional/fwd_v2_update_one_forward.test .....................................................  19 seconds
+1027/1159: 3068_cprs_full_functional/fwd_v2_update_shadowed_attribute.test ..............................................  18 seconds
+1028/1159: 3068_cprs_full_functional/fwd_v2_update_three_found_on_cps_two_local_four_not_found.test .....................  38 seconds
+1029/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_double_forward.test .........................................  27 seconds
+1030/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_false_registration.test .....................................  19 seconds
+1031/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_false_registration_and_one_more_value.test ..................  18 seconds
+1032/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_false_registration_and_one_more_value_in_provider.test ......  28 seconds
+1033/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_five_different_cprs_in_one_query.test .......................  55 seconds
+1034/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_forward_depends_on_attr_field.test ..........................  37 seconds
+1035/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_forward_query_not_found.test ................................  19 seconds
+1036/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_found_and_not_found_locally_and_remote.test .................  38 seconds
+1037/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_no_attributes_in_query_results_from_CB_and_CP1.test .........  19 seconds
+1038/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_no_attributes_in_query_results_from_CP1_and_CP2.test ........  28 seconds
+1039/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_one_forward_query.test ......................................  19 seconds
+1040/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_shadowed_attribute.test .....................................  19 seconds
+1041/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_two_attributes_in_cpr_one_local.test ........................  28 seconds
+1042/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_query_two_attributes_in_one_cpr_three_in_another.test .............  29 seconds
+1043/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_double_forward.test ........................................  28 seconds
+1044/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_false_registration.test ....................................  19 seconds
+1045/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_false_registration_and_one_more_value.test .................  20 seconds
+1046/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_false_registration_and_one_more_value_in_provider.test .....  28 seconds
+1047/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_five_different_cprs_in_one_query.test ......................  57 seconds
+1048/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_forward_depends_on_attr_field.test .........................  39 seconds
+1049/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_found_and_not_found_in_local_and_three_cprs.test ...........  39 seconds
+1050/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_one_forward.test ...........................................  19 seconds
+1051/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_shadowed_attribute.test ....................................  20 seconds
+1052/1159: 3068_cprs_full_functional_v2/fwd_v2_ngsiv2_update_three_found_on_cps_two_local_four_not_found.test ...........  39 seconds
+1053/1159: 3068_ngsi_v2_based_forwarding/check_no_overquerying.test .....................................................  11 seconds
+1054/1159: 3068_ngsi_v2_based_forwarding/forwards_with_accumulator.test .................................................  12 seconds
+1055/1159: 3068_ngsi_v2_based_forwarding/forwards_with_providers.test ...................................................  47 seconds
+1056/1159: 3068_ngsi_v2_based_forwarding/fwd_ngsv1_ngsv2_interoperability.test ..........................................  31 seconds
+1057/1159: 3068_ngsi_v2_based_forwarding/legacy_forwarding_true_false_default_with_accumulator.test .....................  11 seconds
+1058/1159: 3068_ngsi_v2_based_forwarding/query_cpr_fail_but_local_results.test ..........................................  11 seconds
+1059/1159: 3068_ngsi_v2_update_forwarding/update_forwards_with_accumulator.test .........................................  12 seconds
+1060/1159: 3068_ngsi_v2_update_forwarding/update_forwards_with_one_provider.test ........................................  19 seconds
+1061/1159: 3068_ngsi_v2_update_forwarding/update_forwards_with_providers.test ...........................................  40 seconds
+1062/1159: 3070_cursor_based_aggreation_queries/get_many_entity_types.test ..............................................  19 seconds
+1063/1159: 3070_cursor_based_aggreation_queries/more_than_1000_types.test ...............................................  73 seconds
+1064/1159: 3070_cursor_based_aggreation_queries/more_than_2000_types.test ...............................................  140 seconds
+1065/1159: 3106_supported_forwarding_mode/supported_forwarding_entity_mixing_modes.test .................................  20 seconds
+1066/1159: 3106_supported_forwarding_mode/supported_forwarding_five_cpr_query.test ......................................  61 seconds
+1067/1159: 3106_supported_forwarding_mode/supported_forwarding_five_cpr_update.test .....................................  57 seconds
+1068/1159: 3106_supported_forwarding_mode/supported_forwarding_mode_all.test ............................................  20 seconds
+1069/1159: 3106_supported_forwarding_mode/supported_forwarding_mode_basic_crud.test .....................................  10 seconds
+1070/1159: 3106_supported_forwarding_mode/supported_forwarding_mode_none.test ...........................................  20 seconds
+1071/1159: 3106_supported_forwarding_mode/supported_forwarding_mode_ommited.test ........................................  20 seconds
+1072/1159: 3106_supported_forwarding_mode/supported_forwarding_mode_query.test ..........................................  20 seconds
+1073/1159: 3106_supported_forwarding_mode/supported_forwarding_mode_update.test .........................................  20 seconds
+1074/1159: 3112_ngsiv1_autocast/create_attributes_with_autocast.test ....................................................  11 seconds
+1075/1159: 3112_ngsiv1_autocast/filters_in_autocasted_attributes.test ...................................................  11 seconds
+1076/1159: 3112_ngsiv1_autocast/update_attributes_with_autocast.test ....................................................  10 seconds
+1077/1159: 3112_ngsiv1_autocast/update_only_value_with_autocast.test ....................................................  11 seconds
+1078/1159: 3119_qc_nullcharacter_payload/3119_qc_nullcharacter_payload.test .............................................  11 seconds
+1079/1159: 3121_missing_or_empty_metadata_values/batch_operation.test ...................................................  10 seconds
+1080/1159: 3121_missing_or_empty_metadata_values/entitiy_creation.test ..................................................  11 seconds
+1081/1159: 3122_location_metadata_issues/create_and_get_location_metadata_V1_V2_and_geoquery.test .......................  11 seconds
+1082/1159: 3122_location_metadata_issues/create_location_attr_V1.test ...................................................  11 seconds
+1083/1159: 3122_location_metadata_issues/create_location_attr_V2.test ...................................................  11 seconds
+1084/1159: 3122_location_metadata_issues/get_location_attr_with_V1_creation.test ........................................  10 seconds
+1085/1159: 3122_location_metadata_issues/get_location_attr_with_V2_creation.test ........................................  11 seconds
+1086/1159: 3122_location_metadata_issues/get_location_attr_with_db_creation.test ........................................  11 seconds
+1087/1159: 3154_notification_problem_with_custom_header/notification_problem_with_custom_header.test ....................  12 seconds
+1088/1159: 3162_context_providers_legacy_non_primitive/blanked_out_attr.test ............................................  21 seconds
+1089/1159: 3162_context_providers_legacy_non_primitive/query_for_arrays.test ............................................  20 seconds
+1090/1159: 3162_context_providers_legacy_non_primitive/registration_without_provider.test ...............................  11 seconds
+1091/1159: 3176_entity_without_attributes_not_listed/entity_without_attributes_not_listed.test ..........................  11 seconds
+1092/1159: 3177_updateContext_APPEND_CPr_Registration/updateContext_APPEND_CPr_Reg.test .................................  20 seconds
+1093/1159: 3182_builtin_dates_in_initial_notif/builtin_dates_in_initial_notif.test ......................................  12 seconds
+1094/1159: 3189_oneshot_subscription/3189_oneshot_subscription.test .....................................................  14 seconds
+1095/1159: 3189_oneshot_subscription/3189_oneshot_subscription_noCache.test .............................................  24 seconds
+1096/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_empty_cond_empty_notify.test ......  12 seconds
+1097/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_empty_cond_with_notify.test .......  13 seconds
+1098/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_errors.test .......................  12 seconds
+1099/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_get_and_update_subscription.test ..  11 seconds
+1100/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_with_blacklist_empty_cond_with_exce  12 seconds
+1101/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_with_blacklist_with_cond_with_excep  13 seconds
+1102/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_with_cond_empty_notify.test .......  12 seconds
+1103/1159: 3190_notify_only_attributes_that_change/notify_only_attributes_that_change_with_cond_with_notify.test ........  13 seconds
+1104/1159: 3215_upsert_op/upsert_op_as_create.test ......................................................................  11 seconds
+1105/1159: 3215_upsert_op/upsert_op_as_update.test ......................................................................  10 seconds
+1106/1159: 3280_right_processing_of_json_special_chars/right_processing_of_json_special_chars.test ......................  10 seconds
+1107/1159: 3282_compound_not_render_in_not_matching_registration/compound_not_render_in_not_matching_registration.test ..  12 seconds
+1108/1159: 3285_csub_isolation/csub_isolation_attrs_filter.test .........................................................  12 seconds
+1109/1159: 3285_csub_isolation/csub_isolation_metadata_filter.test ......................................................  12 seconds
+1110/1159: 3290_filtering_out_all_metadata_sub/filtering_out_all_metadata_sub.test ......................................  15 seconds
+1111/1159: 3310_preupdate_metadata_content_included_in_notifications/preupdate_metadata_content_included_in_notifications  13 seconds
+1112/1159: 3311_duplicate_attrs_in_filter/duplicate_attrs_in_filter.test ................................................  11 seconds
+1113/1159: 3311_duplicate_attrs_in_filter/duplicate_attrs_in_filter_sub.test ............................................  12 seconds
+1114/1159: 3311_duplicate_metadata_in_filter/duplicate_metadata_in_filter.test ..........................................  12 seconds
+1115/1159: 3311_duplicate_metadata_in_filter/duplicate_metadata_in_filter_sub.test ......................................  12 seconds
+1116/1159: 3363_fwd_query_on_fail/fwd_query_on_fail.test ................................................................  12 seconds
+1117/1159: 3389_forced_update_option/3389_forced_update_option_batch_bool.test ..........................................  13 seconds
+1118/1159: 3389_forced_update_option/3389_forced_update_option_batch_number.test ........................................  13 seconds
+1119/1159: 3389_forced_update_option/3389_forced_update_option_batch_string.test ........................................  13 seconds
+1120/1159: 3389_forced_update_option/3389_forced_update_option_bool.test ................................................  13 seconds
+1121/1159: 3389_forced_update_option/3389_forced_update_option_number.test ..............................................  13 seconds
+1122/1159: 3389_forced_update_option/3389_forced_update_option_string.test ..............................................  13 seconds
+1123/1159: 3427_batch_update_with_idPattern/batch_update_APPEND_with_idPattern.test .....................................  13 seconds
+1124/1159: 3427_batch_update_with_idPattern/batch_update_DELETE_with_idPattern.test .....................................  11 seconds
+1125/1159: 3427_batch_update_with_idPattern/batch_update_REPLACE_with_idPattern.test ....................................  12 seconds
+1126/1159: 3427_batch_update_with_idPattern/batch_update_UPDATE_with_idPattern.test .....................................  12 seconds
+1127/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geobox_create_does_not_break_location.test ...........................  11 seconds
+1128/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geobox_update_does_not_break_location.test ...........................  12 seconds
+1129/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geojson_create_does_not_break_location.test ..........................  11 seconds
+1130/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geojson_update_does_not_break_location.test ..........................  12 seconds
+1131/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geoline_create_does_not_break_location.test ..........................  11 seconds
+1132/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geoline_update_does_not_break_location.test ..........................  12 seconds
+1133/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geopoint_create_does_not_break_location.test .........................  11 seconds
+1134/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geopoint_update_does_not_break_location.test .........................  12 seconds
+1135/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geopolygon_create_does_not_break_location.test .......................  11 seconds
+1136/1159: 3442_ngsiv1_interop_location_fix/ngsiv1_geopolygon_update_does_not_break_location.test .......................  12 seconds
+1137/1159: 3458_legacy-forwarding-with-idpattern/legacy-forwarding-with-idpattern.test ..................................  24 seconds
+1138/1159: 3468_v2_registrations_attribute_name_with_forbidden_character/attribute_name_with_forbidden_character.test ...  11 seconds
+1139/1159: 3492_larger_requests/3492_request_larger_than_1MB.test .......................................................  19 seconds
+1140/1159: 3550_text_unrestricted/text_unrestricted.test ................................................................  13 seconds
+1141/1159: 3603_killer_request_apiv2/killer_request_apiv2_duplicated_key.test ...........................................  11 seconds
+1142/1159: 3604_killer_request_apiv2/killer_request_apiv2_deeply_nested_and_malformed.test ..............................  11 seconds
+1143/1159: 3605_killer_request_apiv2/killer_request_apiv2_deeply_nested_attr.test .......................................  12 seconds
+1144/1159: 3605_killer_request_apiv2/killer_request_apiv2_deeply_nested_metadata.test ...................................  11 seconds
+1145/1159: 3606_killer_request_apiv2/killer_request_apiv2_large.test ....................................................  11 seconds
+1146/1159: 3607_killer_request_apiv1/killer_request_apiv1_parsing_cases.test ............................................  12 seconds
+1147/1159: 3608_killer_request_apiv1/killer_request_apiv1_deeply_nested_attr.test .......................................  12 seconds
+1148/1159: 3608_killer_request_apiv1/killer_request_apiv1_parsing_cases_bis.test ........................................  11 seconds
+1149/1159: 3658_env_vars/env_vars.test ..................................................................................  01 seconds
+1150/1159: 3694_logs_improvements/log_forwarding.test ...................................................................  67 seconds
+1151/1159: 3694_logs_improvements/log_forwarding_max_payload_size.test ..................................................  65 seconds
+1152/1159: 3694_logs_improvements/log_info_payload_max_size.test ........................................................  12 seconds
+1153/1159: 3694_logs_improvements/log_line_max_size.test ................................................................  11 seconds
+1154/1159: 3694_logs_improvements/log_notifications.test ................................................................  13 seconds
+1155/1159: 3694_logs_improvements/log_requests.test .....................................................................  12 seconds
+1156/1159: 3694_logs_improvements/log_text_payloads.test ................................................................  11 seconds
+1157/1159: 3706_incorrect_location_processing/incorrect_location_processing.test ........................................  12 seconds
+1158/1159: 3745_not_cpr_overrequest/not_cpr_overrequest.test ............................................................  45 seconds
+1159/1159: 3777_right_attr_filter_and_project/right_attr_filter_and_project.test ........................................  12 seconds
+Total test time: 9794.64 seconds
+
+WARNING: 5 test cases disabled:
+  o  2: 0000_bad_requests/exit.test
+  o  30: 0000_ipv6_support/ipv4_only.test
+  o  31: 0000_ipv6_support/ipv6_only.test
+  o  374: 0917_queryContext_behaves_differently/query_with_and_without_forwarding.test
+  o  610: 1310_suspect_200OK/suspect_200OK.test
